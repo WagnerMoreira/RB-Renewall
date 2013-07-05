@@ -1,0 +1,72 @@
+#mainmenu,
+/*
+#mainmenu:before,
+#mainmenu:after,
+*/
+#mainmenu-before,
+#mainmenu-after,
+#mainmenu > .scrollarrows > .scrollarrow {
+border-radius: 0 !important;
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%2399948d%22%20offset%3d%220%22/%3e%3cstop%20stop-color%3d%22%235e5a55%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23504b47%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23504b47%22%20offset%3d%22100%25%22%20stop-opacity%3d%220%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+#mainmenu > ul > li:before {
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%235e5a55%22%20offset%3d%220%22%20stop-opacity%3d%220%22/%3e%3cstop%20stop-color%3d%22%235e5a55%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%235e5a55%22%20offset%3d%22100%25%22%20stop-opacity%3d%220%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+#mainmenu > ul > li:after {
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%23aaa%22%20offset%3d%220%22%20stop-opacity%3d%220%22/%3e%3cstop%20stop-color%3d%22%23aaa%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23aaa%22%20offset%3d%22100%25%22%20stop-opacity%3d%220%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+/*#mainmenu > ul > li > a:before {*/
+#mainmenu > ul > li > a > .mainmenu-item-before {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%23fc0%22%20offset%3d%220%22/%3e%3cstop%20stop-color%3d%22%23fa0%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23f90%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23fa0%22%20offset%3d%22100%25%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+#radio-sub > ul > li > a:hover,
+#radio-sub > ul > li > a:active,
+#radio-sub > ul > li > a:focus {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%23fb0%22%20offset%3d%220%22/%3e%3cstop%20stop-color%3d%22%23f80%22%20offset%3d%22100%25%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+#secmenu,
+/*#secmenu:after,*/
+#secmenu-after,
+#secmenu > .scrollarrows > .scrollarrow {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%23000%22%20offset%3d%220%22%20stop-opacity%3d%220%22/%3e%3cstop%20stop-color%3d%22%23000%22%20offset%3d%22100%25%22%20stop-opacity%3d%220.1053%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+.playerbtn {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3cradialGradient%20id%3d%22g%22%3e%3cstop%20stop-color%3d%22%23ffd601%22%20offset%3d%220%22/%3e%3cstop%20stop-color%3d%22%23ffaf01%22%20offset%3d%2247.5%25%22/%3e%3cstop%20stop-color%3d%22%23f90%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23ffaf01%22%20offset%3d%22100%25%22/%3e%3c/radialGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%22-0.915%22%20width%3d%221%22%20height%3d%221.915%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+}
+
+#player-bottom:before {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%233b3a39%22%20offset%3d%220%22/%3e%3cstop%20stop-color%3d%22%23504b47%22%20offset%3d%2230%25%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+.mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button,
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20viewBox%3d%220%200%201%201%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22g%22%20x1%3d%220%22%20y1%3d%220%22%20x2%3d%220%22%20y2%3d%22100%25%22%3e%3cstop%20stop-color%3d%22%23ffb300%22%20offset%3d%2250%25%22/%3e%3cstop%20stop-color%3d%22%23f90%22%20offset%3d%2250%25%22/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20x%3d%220%22%20y%3d%220%22%20width%3d%221%22%20height%3d%221%22%20fill%3d%22url%28%23g%29%22/%3e%3c/svg%3e);
+    background-size: 100% 100%;
+}
+
+@media (min-width: 640px) {
+
+    #forno > ul > li > a > div {
+        bottom: -4.5rem;
+    }
+    
+    html.no-touch #forno > ul > li > a:hover > div,
+    #forno > ul > li > a:active > div,
+    html.focus #forno > ul > li > a:focus > div {
+        bottom: 0;
+    }
+}

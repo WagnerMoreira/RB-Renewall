@@ -1,0 +1,40 @@
+/******************
+ * Meter PolyFill
+ ******************/
+.meter,
+meter {
+    display: inline-block;
+    color: transparent;
+    height: 16px;
+    width: 100px;
+    overflow: hidden;
+	background: #ededed; /* Old browsers */
+	background: -webkit-linear-gradient(#ededed 0%,#bbb 36%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(#ededed 0%, #bbb 36%, #f7f7f7 100%); /* FF3.6+ */
+	background: -o-linear-gradient(#ededed 0%,#bbb 36%,#f7f7f7 100%); /* Opera 11.10+ */
+	background: linear-gradient(#ededed 0%,#bbb 36%,#f7f7f7 100%); /* W3C */
+}
+
+.meter .indicator,
+meter .indicator {
+    display: block;
+    height: 100%;
+    background: #b4e391; /* old browsers */
+	background: -webkit-linear-gradient(#b4e391 0%, #4a0 35%, #b4e391 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-linear-gradient(#b4e391 0%, #4a0 35%, #b4e391 100%); /* firefox */
+	background: -o-linear-gradient(#b4e391 0%, #4a0 35%, #b4e391 100%); /* Opera 11.10+ */
+	background: linear-gradient(#b4e391 0%, #4a0 35%, #b4e391 100%); /* W3C */
+}
+
+.meterValueTooHigh div, .meterValueTooLow div {
+    background: #ffd65e; /* old browsers */
+    background: -webkit-linear-gradient(#ffd65e 0%, #fbff47 35%, #febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-linear-gradient(#ffd65e 0%, #fbff47 35%, #febf04 100%); /* firefox */
+    background: -o-linear-gradient(#ffd65e 0%, #fbff47 35%, #febf04 100%); /* Opera 11.10+ */
+    background: linear-gradient(#ffd65e 0%, #fbff47 35%, #febf04 100%); /* W3C */
+}
+
+.meterIsMaxed
+{
+    border-right: 0px none !important;
+}

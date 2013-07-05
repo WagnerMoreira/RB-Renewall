@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="fadergrad" x1="0" x2="1">
+      <stop offset="0" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <rect id="fader" width="1" height="1" fill="url(#fadergrad)"/>
+  </defs>
+  <mask id="fade-ltr" maskContentUnits="objectBoundingBox"><use xlink:href="#fader"/></mask>
+  <mask id="fade-rtl" maskContentUnits="objectBoundingBox"><use xlink:href="#fader" transform="rotate(180, 0.5, 0.5)"/></mask>
+  <mask id="fade-ttb" maskContentUnits="objectBoundingBox"><use xlink:href="#fader" transform="rotate(90, 0.5, 0.5)"/></mask>
+  <mask id="fade-btt" maskContentUnits="objectBoundingBox"><use xlink:href="#fader" transform="rotate(-90, 0.5, 0.5)"/></mask>
+</svg>

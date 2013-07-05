@@ -1,0 +1,122 @@
+#podcasts {
+    color: #666;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    margin-bottom: 3.1rem !important;
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+
+    #podcasts {
+        width: 50%;
+        padding-left: 1rem;
+        float: right;
+    }
+}
+
+html.night #podcasts {
+    color: #999;
+}
+
+#podcasts > h1 {
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+html.night #podcasts > h1 {
+    border-color: #000;
+}
+
+:not(aside)#podcasts > ul {
+    height: 40.5rem;
+}
+
+#podcasts > ul > li {
+    overflow: hidden;
+    border-bottom: 1px solid #e4e4e4;
+    -webkit-transition: height .2s, border-color .2s;
+    transition: height .2s, border-color .2s;
+}
+
+aside#podcasts > h1,
+aside#podcasts > ul > li {
+    border: 0;
+}
+
+html.night #podcasts > ul > li {
+    border-color: #000;
+}
+
+#podcasts > ul > li > a {
+    display: block;
+    height: 8.5rem;
+    padding: 1rem 0;
+}
+
+#podcasts > ul > li > a:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#podcasts > ul > li > a > img {
+    float: left;
+    margin-right: 1rem;
+    width: 10rem;
+    height: 6.5rem;
+    border-radius: 6px;
+}
+
+#podcasts > ul > li > a > * {
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+#podcasts > ul > li > a > time {
+    padding-top: .4rem;
+    display: block;
+}
+
+#podcasts > ul > li > a > h2 {
+    margin-top: .4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#podcasts > ul > li:hover > a > time,
+#podcasts > ul > li > a:active > time,
+#podcasts > ul > li > a:focus > time {
+    color: #000;
+}
+
+html.night #podcasts > ul > li:hover > a > time,
+html.night #podcasts > ul > li > a:active > time,
+html.night #podcasts > ul > li > a:focus > time {
+    color: #fff;
+}
+
+#podcasts > ul > li:hover > a > h2,
+#podcasts > ul > li > a:active > h2,
+#podcasts > ul > li > a:focus > h2 {
+    color: #f90;
+}
+
+#podcasts > ul > li > audio,
+#podcasts > ul > li > .mejs-audio {
+    height: 3.5rem;
+    margin-bottom: .6rem;
+}
+
+#podcasts > ul > li,
+#podcasts > ul:not(.hover):hover > li:first-child,
+#podcasts > ul.hover > li:first-child {
+    height: 8.5rem;
+}
+
+#podcasts > ul > li:first-child,
+#podcasts > ul:not(.hover):hover > li:hover,
+#podcasts > ul.hover > li.hover {
+    height: 15rem;
+}

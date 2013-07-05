@@ -1,0 +1,453 @@
+article {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    margin-bottom: 1.8rem;
+}
+
+html.night article {
+    color: #999;
+}
+
+article > header {
+    margin-bottom: 2.7rem;
+    padding-bottom: .9rem;
+    box-shadow: inset 0 -1px rgba(128, 128, 128, .2);
+}
+
+article > header:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+article > header h1 {
+    margin: 0;
+    line-height: 3.6rem;
+}
+
+article:not(.single) > header h1 {
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+}
+
+article > header h1 > a,
+article > header > p.comentarios > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html.no-touch article > header h1 > a:hover,
+article > header h1 > a:active,
+html.focus article > header h1 > a:focus,
+html.no-touch article > header > p.comentarios > a:hover,
+article > header > p.comentarios > a:active,
+html.focus article > header > p.comentarios > a:focus {
+    text-decoration: underline;
+}
+
+article > header h2 {
+    font: inherit;
+    font-size: 1.4rem;
+    color: inherit;
+    margin-top: 0;
+}
+
+article.single > header h2 {
+    font-size: 1.6rem;
+    margin: 0 0 .9rem;
+    padding-bottom: .9rem;
+    box-shadow: inset 0 -1px rgba(128, 128, 128, .1);
+}
+
+article > header > p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+article > header > p.time {
+    padding-right: 1rem;
+    float: left;
+}
+
+article > header > p.permalink,
+article > header > p.comentarios {
+    float: right;
+}
+
+article > header > p:before {
+    font-family: blastdings;
+    width: 2.3rem;
+    line-height: 1.8rem;
+    padding-right: .5rem;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+article > header > p.time:before {
+    content: '\\';
+    font-size: 1.3rem;
+}
+
+article > header > p.permalink:before {
+    content: '|';
+    font-size: 1.3rem;
+}
+
+article > header > p.tags {
+    clear: both;
+}
+
+article > header > p.tags:before {
+    content: ']';
+    font-size: 1.6rem;
+}
+
+article > header > p.permalink > span,
+article > header > p.tags > span {
+    position: absolute;
+    left: -9001px;
+}
+
+article > footer {
+    font-family: sansation, sans-serif;
+    font-size: 1.6rem;
+    position: relative;
+    box-shadow: inset 0 1px  rgba(128, 128, 128, .2),
+                inset 0 -1px rgba(128, 128, 128, .2);
+    margin: 7.2rem 0 3.6rem;
+}
+
+article > footer > .addthis {
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 1.8rem;
+    right: 0;
+}
+
+body > [id^='at'] *,
+article > footer > .addthis * {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+article > footer > .author {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3.6rem 0;
+    padding-left: 14rem;
+    height: 18rem;
+}
+
+article > footer > .author:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article > footer > .author > p {
+    margin: 0;
+    font-style: italic;
+}
+
+article > footer > .author > p:last-child {
+    font-style: normal;
+    margin-top: 1.8rem;
+}
+
+article > footer > .author > img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5.4rem;
+    width: 10.8rem;
+    height: 10.8rem;
+}
+
+html.no-touch article > footer > .author > p.links > a:hover,
+article > footer > .author > p.links > a:active,
+html.focus article > footer > .author > p.links > a:focus {
+    background: #f90;
+    color: #fff;
+}
+
+article h1, article h2, article h3,
+article h4, article h5, article h6 {
+    color: #f90;
+    font-family: sansation, sans-serif;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin: 1.8rem 0;
+}
+
+article h1 { font-size: 3.2rem; }
+article h2 { font-size: 2.4rem; }
+article h3 { font-size: 1.8rem; }
+article h4 { font-size: 1.4rem; }
+article h5 { font-size: 1.2rem; }
+article h6 { font-size: 1.0rem; }
+
+article > p:last-of-type:after {
+    content: '@';
+    color: #f90;
+    padding-left: .5rem;
+}
+
+article p,
+article ol,
+article ul,
+article dl,
+article ol.bigitems > li,
+article ul.bigitems > li,
+article dl.bigitems > dd {
+    margin: 1.8rem 0;
+}
+
+article ol ol, article ol ul, article ol dl,
+article ul ol, article ul ul, article ul dl,
+article dl ol, article dl ul, article dl dl {
+    margin: 0;
+}
+
+article ol {
+    padding-left: 3rem;
+}
+
+article ol       > li { list-style: decimal;     }
+article ol ol    > li { list-style: lower-roman; }
+article ol ol ol > li { list-style: lower-alpha; }
+
+article ul {
+    padding-left: 2rem;
+}
+
+article ul       > li { list-style: disc;   }
+article ul ul    > li { list-style: circle; }
+article ul ul ul > li { list-style: square; }
+
+article dl > dt {
+    font-weight: 700;
+}
+
+article dl > dd {
+    padding-left: 3rem;
+}
+
+article dl.tabular {
+    border-bottom: 1px solid;
+    margin-bottom: 2.7rem;
+    padding-bottom: .8rem;
+}
+
+article dl.tabular:before {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+article dl.tabular:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+article dl.tabular > dt {
+    clear: left;
+    float: left;
+    width: 22rem;
+}
+
+article dl.tabular > dd {
+    margin-left: 22rem;
+    padding-left: 2rem;
+    border-top: 1px dashed rgba(128, 128, 128, .35);
+    margin-top: .9rem;
+    padding-top: .8rem;
+}
+
+article dl.tabular > dt,
+article dl.tabular > dt + dd {
+    border-top: 1px solid;
+    margin-top: .9rem;
+    padding-top: .8rem;
+}
+
+article hr {
+    height: 1.8rem;
+    border: 0;
+    background: url() center contain; /* TODO um fundo legalzinho */
+}
+
+article a {
+    color: #f90;
+    text-decoration: underline;
+}
+
+article a:after {
+    font-family: blastdings;
+    opacity: .5;
+    display: inline-block;
+    padding-left: .5rem;
+}
+
+article a[href^='http://']:after {
+    content: '%';
+}
+
+article a[href^='http://mezi.at']:after, /* XXX */
+article > footer a:after {
+    display: none !important;
+}
+
+article b,
+article strong {
+    font-weight: 700;
+}
+
+article i,
+article em {
+    font-style: italic;
+}
+
+article samp,
+article kbd,
+article code {
+    font-family: ubuntumono, monospace;
+    background: rgba(128, 128, 128, .05);
+    padding: .1rem .3rem;
+    border: 1px solid rgba(128, 128, 128, .1);
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+article var {
+    font-style: italic;
+    font-family: 'cambria math', serif;
+}
+
+article cite.album,
+article cite.livro,
+article cite.game,
+article cite.serie,
+article cite.filme,
+article cite.curta,
+article cite.periodico {
+    font-style: italic;
+}
+
+article cite.clipe:before,
+article cite.single:before,
+article cite.musica:before,
+article cite.capitulo:before {
+    content: open-quote;
+}
+
+article cite.clipe:after,
+article cite.single:after,
+article cite.musica:after,
+article cite.capitulo:after {
+    content: close-quote;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article abbr {
+    cursor: help !important;
+    border-bottom: 1px dashed #999;
+}
+
+article mark {
+    background: rgba(255, 153, 0, .25);
+    color: #333;
+}
+
+article blockquote {
+    margin: 1.8rem 4rem;
+    color: #999;
+}
+
+article blockquote:before,
+article blockquote:after {
+    font: 700 7rem/1 georgia, serif;
+    opacity: .5;
+    width: 0;
+    height: 0;
+}
+
+article blockquote:before {
+    content: '\201c';
+    float: left;
+    margin-left: -4rem;
+    margin-top: -1rem;
+}
+
+article blockquote:after {
+    content: '\201d';
+    float: right;
+    margin-top: -4.5rem;
+}
+
+article pre {
+    padding: 1.8rem;
+    background: rgba(128, 128, 128, .05);
+    box-shadow: 0 0 0 1px rgba(128, 128, 128, .35);
+    font-family: ubuntumono, monospace;
+    max-height: 36rem;
+    overflow: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+article .syntaxhihlighter {
+    margin: 1.8rem 0 !important;
+}
+
+article table {
+    margin: 2.7rem 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+article table th {
+    text-align: center;
+    font-weight: 700;
+}
+
+article table th,
+article table td {
+    padding: .9rem;
+}
+
+article table > thead > tr > th {
+    box-shadow: inset 0 -1px #ddd;
+}
+
+article table > tbody > tr > td {
+    box-shadow: inset 0 1px #ddd;
+}
+
+article table > tbody > tr:nth-child(even) {
+    background: #eee;
+}
+
+article table > tfoot > tr > td {
+    box-shadow: inset 0 2px #ccc;
+}

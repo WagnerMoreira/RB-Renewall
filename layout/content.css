@@ -1,0 +1,346 @@
+#miolo {
+    background: #fff;
+    padding: 2rem;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #miolo {
+    background: #202020;
+}
+
+#miolo:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#siteheader,
+#sitefooter,
+#miolo {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+}
+
+#breadcrumb {
+    font-size: 1.2rem;
+    color: #f90;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+#breadcrumb > a {
+    color: #504b46;
+}
+
+html.no-touch #breadcrumb > a:hover,
+#breadcrumb > a:active,
+html.focus #breadcrumb > a:focus {
+    text-decoration: underline;
+}
+
+html.night #breadcrumb > a {
+    color: #999;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+#banner > img {
+    width: 94rem;
+    height: 15rem;
+    position: absolute;
+    margin-left: -47rem;
+    left: 50%;
+    top: 0;
+}
+
+#banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient(transparent 40%, rgba(0, 0, 0, .3));
+    background-image: linear-gradient(transparent 40$, rgba(0, 0, 0, .3));
+    z-index: 1;
+}
+
+#banner > div {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.4rem;
+    max-width: 25rem;
+    text-align: right;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    z-index: 2;
+}
+
+#banner > div:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+#banner > div > h1 {
+    font-family: ubuntutitling, sans-serif;
+    font-size: 3rem;
+    color: #f90;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+#subsite-links {
+    background: #f90;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+html.home #miolo section {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+html.home #miolo section:after {
+    content: '';
+    clear: both;
+}
+
+html.home #miolo section > h1,
+html.home #miolo section > header > h1 {
+    height: 3rem;
+    text-transform: uppercase;
+    font-family: ubuntutitling, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: #f90;
+    letter-spacing: -1px;
+}
+
+html.home #miolo section > h1:before,
+html.home #miolo section > header > h1:before {
+    content: '+';
+    font-family: blastdings;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    line-height: calc(2.5rem); /* ie9 */
+    vertical-align: top;
+    padding-right: .8rem;
+}
+
+html.home #miolo section > h1 > a,
+html.home #miolo section > header > h1 > a {
+    text-transform: none;
+    color: #ccc;
+    font-size: 2rem;
+}
+
+html:not(.home) #miolo :not(article) aside {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+html:not(.home) #miolo :not(article) aside > h1 {
+    font-family: ubuntutitling, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #f90;
+    margin-bottom: .5rem;
+    letter-spacing: -.1rem;
+}
+
+@media (min-width: 960px) {
+
+    .meio-holder {
+        float: left;
+        width: 62rem;
+    }
+
+    .meio-holder2 {
+        float: right;
+        width: 30rem;
+    }
+}
+
+.contraste {
+    background: #333;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    margin: 0 -2rem 1rem;
+    padding: 2rem;
+}
+
+.contraste:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+html.night .contraste {
+    background: #000;
+}
+
+#ad2 {
+    background: #808080;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+    height: 60px;
+}
+
+#ad4 {
+    background: #808080;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#pagenav {
+    font-family: ubuntutitling, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: #666;
+    -webkit-transition: color 200ms;
+    transition: color 200ms;
+    margin-bottom: 3.6rem;
+}
+
+#pagenav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+html.night #pagenav {
+    color: #999;
+}
+
+#pagenav > p {
+    padding: 0 2rem;
+}
+
+#pagenav > p > a {
+    -webkit-transition-property: -webkit-transform, color;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+    transition-property: transform, color;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+}
+
+html.no-touch #pagenav > p > a:hover,
+#pagenav > p > a:active,
+html.focus #pagenav > p > a:focus {
+    color: #f90;
+}
+
+@media (max-width: 479px) {
+
+    #pagenav .firstword {
+        position: absolute;
+        left: -9001px;
+    }
+}
+
+/*
+#pagenav > p > a:before,
+#pagenav > p > a:after {
+*/
+#pagenav-first-before,
+#pagenav-last-after {
+    padding: 0 .5rem;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateX(0);
+    transform: translateZ(0);
+    color: #f90;
+}
+
+#pagenav > p:first-child {
+    float: left;
+}
+
+/*#pagenav > p:first-child > a:before {*/
+#pagenav-first-before:before {
+    content: '\00ab';
+}
+
+/*
+html.no-touch #pagenav > p:first-child > a:hover:before,
+#pagenav > p:first-child > a:active:before,
+html.focus #pagenav > p:first-child > a:focus:before {
+*/
+html.no-touch a:hover > #pagenav-first-before,
+a:active > #pagenav-first-before,
+html.focus a:focus > #pagenav-first-before {
+    -webkit-transform: translateX(-1rem) translateZ(0);
+    -ms-transform: translateX(-1rem);
+    transform: translateX(-1rem) translateZ(0);
+}
+
+#pagenav > p:last-child {
+    float: right;
+}
+
+/*#pagenav > p:last-child > a:after {*/
+#pagenav-last-after:after {
+    content: '\00bb';
+}
+
+#archives > table {
+    width: 30.8rem;
+}
+
+#archives > table span,
+#archives > table a {
+    width: 100%;
+}
+
+/*
+html.no-touch #pagenav > p:last-child > a:hover:after,
+#pagenav > p:last-child > a:active:after,
+html.focus #pagenav > p:last-child > a:focus:after {
+*/
+html.no-touch a:hover > #pagenav-last-after,
+a:active > #pagenav-last-after,
+html.focus a:focus > #pagenav-last-after {
+    -webkit-transform: translateX(1rem) translateZ(0);
+    -ms-transform: translateX(1rem);
+    transform: translateX(1rem) translateZ(0);
+}
+
+@media (max-width: 319px) {
+
+    #ad2 {
+        width: 216px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+
+    #ad2 {
+        width: 300px;
+        height: 50px;
+    }
+}

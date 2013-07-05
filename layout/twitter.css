@@ -1,0 +1,171 @@
+#twitter {
+    height: 3rem;
+    border-radius: 4px 1.5rem 1.5rem 4px;
+    background: #5c5752;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    overflow: hidden;
+}
+
+html.night #twitter {
+    background: #333;
+}
+
+#twitter > h1 {
+    display: inline-block;
+    line-height: 3rem !important;
+    text-indent: -9001px;
+    font-size: 0 !important;
+    float: left;
+}
+
+#twitter > h1:before {
+    content: '@' !important;
+    color: #fff;
+    font-size: 1.8rem !important;
+    line-height: 3rem !important;
+    line-height: calc(3rem) !important; /* ie9 */
+    float: left;
+    padding-left: 1rem;
+    text-indent: 0;
+}
+
+#twitter > ul {
+    font-size: 1.1rem;
+    color: #fff;
+    white-space: nowrap;
+    margin-right: 2rem;
+    margin-left: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#twitter > ul > li {
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+}
+
+#twitter > ul > li.slideup,
+#twitter > ul > li.slidedown {
+    opacity: 0;
+}
+
+#twitter > ul > li > q {
+    display: block;
+    padding: .9rem 0 1rem;
+    width: 900px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: box-shadow .2s, width 1s linear;
+    transition: box-shadow .2s, width 1s linear;
+}
+
+html.night #twitter > ul > li > q {
+    box-shadow: inset -3rem 0 1rem -2rem #333;
+}
+
+#twitter > ul > li > q.retweet {
+    font-style: italic;
+}
+
+#twitter > ul > li > q:before {
+    display: none;
+}
+
+/*#twitter > ul > li > q:after {*/
+#twitter > ul > li > q > .q-after {
+    content: '';
+    position: absolute;
+    right: -1rem;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+    box-shadow: 4rem 0 10rem 10rem #5c5752;
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+}#twitter > ul > li > q:after{display:none;}
+
+/*html.night #twitter > ul > li > q:after {*/
+html.night #twitter > ul > li > q > .q-after {
+    box-shadow: 4rem 0 10rem 10rem #333;
+}
+
+#twitter > ul > li > q > a {
+    color: #f90;
+}
+
+#twitter > ul > li > p {
+    position: absolute;
+    z-index: 5;
+    top: .9rem;
+    right: 1rem;
+    background: #5c5752;
+    box-shadow: 0 0 1rem 1rem #5c5752;
+    color: #999;
+    font-style: italic;
+    -webkit-transition: opacity .2s, background .2s, box-shadow .2s;
+    transition: opacity .2s, background .2s, box-shadow .2s;
+}
+
+html.night #twitter > ul > li > p {
+    background: #333;
+    box-shadow: 0 0 1rem 1rem #333;
+}
+
+#twitter > ul > li.hidden > p,
+#twitter > ul > li.hidden > q {
+    -webkit-transition: none;
+    transition: none;
+}
+
+#twitter > ul > li.hidden > p {
+    opacity: 0;
+}
+
+#twitter > ul > li.hidden > q {
+    width: 0%;
+}
+
+html.no-touch #twitter > ul a:hover,
+#twitter > ul a:active,
+html.focus #twitter > ul a:focus {
+    text-decoration: underline;
+}
+
+#twitter > footer > a {
+    position: absolute;
+    right: .6rem;
+    top: .6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    border: 2px solid;
+    color: #fff;
+    background: #f90;
+    -webkit-transition-property: -webkit-transform, color, background;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    transition-property: transform, color, background;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    text-indent: -9001px;
+    font-family: blastdings;
+    text-align: center;
+    z-index: 6;
+}
+
+html.night #twitter > footer > a {
+    background: #333;
+    color: #f90;
+}
+
+#twitter > footer a:before {
+    content: '}';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    line-height: calc(1.6rem); /* ie9 */
+    text-indent: -.1rem;
+}

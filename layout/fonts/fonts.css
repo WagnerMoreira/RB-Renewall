@@ -1,0 +1,227 @@
+@font-face {
+    font-family: blastdings;
+    src: url('blastdings.eot');
+    src: url('blastdings.eot?#iefix') format('embedded-opentype'),
+         url('blastdings.woff') format('woff'),
+         url('blastdings.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntutitling;
+    src: url('ubuntutitling-b.eot');
+    src: url('ubuntutitling-b.eot?#iefix') format('embedded-opentype'),
+         url('ubuntutitling-b.woff') format('woff'),
+         url('ubuntutitling-b.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+/*
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-l.eot');
+    src: url('ubuntu-l.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-l.woff') format('woff'),
+         url('ubuntu-l.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-li.eot');
+    src: url('ubuntu-li.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-li.woff') format('woff'),
+         url('ubuntu-li.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+
+}
+*/
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-r.eot');
+    src: url('ubuntu-r.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-r.woff') format('woff'),
+         url('ubuntu-r.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-ri.eot');
+    src: url('ubuntu-ri.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-ri.woff') format('woff'),
+         url('ubuntu-ri.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+
+}
+/*
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-m.eot');
+    src: url('ubuntu-m.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-m.woff') format('woff'),
+         url('ubuntu-m.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-mi.eot');
+    src: url('ubuntu-mi.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-mi.woff') format('woff'),
+         url('ubuntu-mi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+
+}
+*/
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-b.eot');
+    src: url('ubuntu-b.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-b.woff') format('woff'),
+         url('ubuntu-b.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url('ubuntu-bi.eot');
+    src: url('ubuntu-bi.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-bi.woff') format('woff'),
+         url('ubuntu-bi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: ubuntucondensed;
+    src: url('ubuntu-c.eot');
+    src: url('ubuntu-c.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-c.woff') format('woff'),
+         url('ubuntu-c.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntumono;
+    src: url('ubuntumono-r.eot');
+    src: url('ubuntumono-r.eot?#iefix') format('embedded-opentype'),
+         url('ubuntumono-r.woff') format('woff'),
+         url('ubuntumono-r.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ubuntumono;
+    src: url('ubuntumono-ri.eot');
+    src: url('ubuntumono-ri.eot?#iefix') format('embedded-opentype'),
+         url('ubuntumono-ri.woff') format('woff'),
+         url('ubuntumono-ri.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ubuntumono;
+    src: url('ubuntumono-b.eot');
+    src: url('ubuntumono-b.eot?#iefix') format('embedded-opentype'),
+         url('ubuntumono-b.woff') format('woff'),
+         url('ubuntumono-b.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ubuntumono;
+    src: url('ubuntumono-bi.eot');
+    src: url('ubuntumono-bi.eot?#iefix') format('embedded-opentype'),
+         url('ubuntumono-bi.woff') format('woff'),
+         url('ubuntumono-bi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+/*
+@font-face {
+    font-family: sansation;
+    src: url('sansation-l.eot');
+    src: url('sansation-l.eot?#iefix') format('embedded-opentype'),
+         url('sansation-l.woff') format('woff'),
+         url('sansation-l.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: sansation;
+    src: url('sansation-li.eot');
+    src: url('sansation-li.eot?#iefix') format('embedded-opentype'),
+         url('sansation-li.woff') format('woff'),
+         url('sansation-li.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+
+}
+*/
+@font-face {
+    font-family: sansation;
+    src: url('sansation-r.eot');
+    src: url('sansation-r.eot?#iefix') format('embedded-opentype'),
+         url('sansation-r.woff') format('woff'),
+         url('sansation-r.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: sansation;
+    src: url('sansation-ri.eot');
+    src: url('sansation-ri.eot?#iefix') format('embedded-opentype'),
+         url('sansation-ri.woff') format('woff'),
+         url('sansation-ri.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: sansation;
+    src: url('sansation-b.eot');
+    src: url('sansation-b.eot?#iefix') format('embedded-opentype'),
+         url('sansation-b.woff') format('woff'),
+         url('sansation-b.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: sansation;
+    src: url('sansation-bi.eot');
+    src: url('sansation-bi.eot?#iefix') format('embedded-opentype'),
+         url('sansation-bi.woff') format('woff'),
+         url('sansation-bi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+
+}

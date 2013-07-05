@@ -1,0 +1,246 @@
+#destaques.transition {
+    background: url(noise.gif);
+}
+
+#destaques:before {
+    content: '';
+    display: block;
+    padding-top: 48.387098%;
+}
+
+#destaques > h1 {
+    position: absolute;
+    left: -9001px;
+}
+
+#destaques > ul > li {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#destaques > ul > li {
+    background: #fff;
+}
+
+#destaques > ul > li > a {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-property: -webkit-transform, color, box-shadow;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    transition-property: transform, color, box-shadow;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    color: #fff;
+    box-shadow: 0 0 0 3px #fff;
+    border-radius: 5px;
+    nav-up: #secmenu;
+    nav-down: #destaque-tags;
+    nav-left: current;
+    nav-right: #blocoradio;
+    -webkit-transform: scalez(1);
+    -ms-transform: scale(1);
+    transform: scalez(1);
+}
+
+html.night #destaques > ul > li > a {
+    color: #202020;
+    box-shadow: 0 0 0 3px #202020;
+}
+
+#destaques > ul > li > a:after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    right: -3px;
+    top: -3px;
+    bottom: -3px;
+    border-radius: 8px;
+    border: 3px solid;
+}
+
+#destaques > ul > li > a > img {
+    width: 100%;
+    height: 100%;
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+    -ms-object-fit: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#destaques > ul > li > a > div {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: .8rem 1rem;
+    overflow: hidden;
+}
+
+@media (max-width: 639px) {
+
+    #destaques > ul > li > a > div {
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+html.no-touch #destaques > ul > li > a:hover,
+#destaques > ul > li > a:active,
+html.focus #destaques > ul > li > a:focus,
+html.night.no-touch #destaques > ul > li > a:hover,
+html.night #destaques > ul > li > a:active,
+html.night.focus #destaques > ul > li > a:focus {
+    color: #ffae00;
+    box-shadow: 0 0 0 3px #ffae00;
+}
+
+#destaques > ul > li > a:active {
+    -webkit-transform: scale(.9) scalez(1);
+    -ms-transform: scale(.9);
+    transform: scale(.9) scalez(1);
+}
+
+#destaques > ul > li:first-child > a {
+    position: absolute;
+    z-index: 16;
+}
+
+html.focus #destaques > ul > li > a:focus {
+    position: absolute;
+    z-index: 17;
+}
+
+#destaques > ul > li > a > div > h2 {
+    font-size: 1.4rem;
+    line-height: 1.13;
+    font-weight: 700;
+    color: #ffae00;
+}
+
+#destaques > ul > li > a > div > p {
+    font-size: 1.2rem;
+    line-height: 1.32;
+}
+
+@media (max-width: 449px) {
+
+    #destaques > ul > li > a > div > p {
+        position: relative;
+        max-height: 0;
+        top: 1rem;
+        -webkit-transition: max-height .2s, top .2s;
+        text-overflow: ellipsis;
+    }
+
+    html.no-touch #destaques > ul > li > a:hover > div > p,
+    #destaques > ul > li > a:active > div > p,
+    html.focus #destaques > ul > li > a:focus > div > p {
+        max-height: 3rem;
+        top: 0;
+    }
+}
+
+#destaques.t3d {
+    /* gambiarra para bug esranho no webkit */
+    -webkit-transform: translatez(0);
+}
+
+#destaques.t3d > ul > li {
+    z-index: -10;
+    background: transparent;
+    opacity: 0;
+}
+
+#destaques.t3d > ul > li.current {
+    z-index: 15;
+    opacity: 1;
+}
+
+#destaques.t3d > ul > li > a > img,
+#destaques.t3d > ul > li > a > div,
+#destaques.t3d > ul > li > a > div * {
+    -webkit-transform: translatez(0);
+    -ms-transform: translatex(0);
+    transform: translatez(0);
+}
+
+#destaques.t3d > ul > li > a > img {
+    max-width: auto;
+    max-height: auto;
+}
+
+#destaques.t3d > ul > li > a > img,
+#destaques.t3d > ul > li > a > div * {
+    opacity: 0;
+}
+
+#destaques.t3d > ul > li.current > a > img {
+    -webkit-transition: -webkit-transform 5s, opacity .5s;
+    transition: transform 5s, opacity .5s;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+}
+
+#destaques.t3d > ul > li.current > a > div * {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+#destaques.t3d > ul > li.current.showing > a > img ,
+#destaques.t3d > ul > li.current.showing > a > div * {
+    opacity: 1;
+}
+
+#destaques.cnv > ul > li {
+    display: none;
+    background: transparent;
+}
+
+#destaques.cnv > ul > li.current {
+    display: block;
+}
+
+#destaques.cnv > ul > li > a > img {
+    display: none;
+}
+
+#destaques.cnv > ul > li > a > canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#destaques-bullets {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    z-index: 20;
+    overflow: hidden;
+}
+
+#destaques-bullets > span {
+    display: inline-block;
+    background: #999;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 0 .6rem;
+    cursor: pointer;
+}
+
+#destaques-bullets > span.current {
+    background: #fff;
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, .35);
+}

@@ -1,0 +1,43 @@
+= Fonte Blastdings =
+O arquivo IcoMoon.json é para ser usado neste site:
+http://icomoon.io/app/
+
+Este site é o que gera a fonte Blastdings, que contém muitos dos ícones utiliza-
+dos no site. Os ícones acabam sendo essencialmente monocromáticos, mas pode-se
+facilmente mudar tamanho, cor e aplicar sombras com técnicas atuais de CSS.
+
+Do mesmo modo, a pasta icons-svg contém os ícones que eu fiz para serem utiliza-
+dos na fonte, todos em SVG. Todos com altura e largura iguais a 512 (exceto por
+um, que esqueci :P mas ao menos a ALTURA tem que ser sempre 512!).
+
+
+
+= Outras fontes =
+Todas as fontes personalizadas foram passadas no gerador do Fontsquirrel:
+http://www.fontsquirrel.com/fontface/generator
+
+Opções de configuração:
+* Font Formats: TrueType, WOFF, EOT Compressed
+Truetype hinting: Font Squirrel
+Rendering: Fix Vertical Metrics, Fix GASP Table
+Fix Missing Glyphs: (desmarcar tudo)
+X-height Matching: None
+Protection: (não marcar nada; dá problemas no Opera)
+Subsetting: No Subsetting
+CSS: (desmarcar tudo)
+OpenType Options: (desmarcar tudo)
+Advanced Options: (todos os campos em branco)
+
+As fontes utilizadas, juntamente com suas opções específicas de configuração,
+são as seguintes:
+
+* Blastdings <descrita acima>
+    Rendering: marcar também Remove Kerning
+* Sansation <http://www.fontsquirrel.com/fonts/Sansation>
+    (nada em especial)
+* Ubuntu <http://font.ubuntu.com/>
+    Truetype Hinting: Keep Existing
+* Ubuntu Titling <http://betatype.com/node/36>
+    (nada em especial)
+
+Gere as famílias COMPLETAS das fontes!

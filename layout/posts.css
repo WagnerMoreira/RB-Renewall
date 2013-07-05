@@ -1,0 +1,173 @@
+#posts {
+    margin-right: -2rem;
+    margin-bottom: 3.1rem !important;
+}
+
+#posts > h1 {
+    margin-right: 2rem;
+    border-bottom: 1px solid #e4e4e4;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+html.night #posts > h1 {
+    border-color: #000;
+}
+
+#posts > ul > li {
+    color: #e4e4e4;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    display: inline-block;
+    padding-right: 2rem;
+    vertical-align: top;
+    width: 50%;
+}
+
+@media (max-width: 479px) {
+
+    #posts > ul > li {
+        width: 100%;
+    }
+}
+
+html.night #posts > ul > li {
+    color: #000;
+}
+
+#posts > ul > li:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid;
+}
+
+#posts > ul > li > a {
+    display: block;
+    padding: .8rem 0;
+    position: relative;
+    color: #666;
+    -webkit-transition-property: -webkit-transform, color;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+    transition-property: transform, color;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+}
+
+html.night #posts > ul > li > a {
+    color: #999;
+}
+
+#posts > ul > li > a:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#posts > ul > li > a > img {
+    border-radius: 5px;
+    width: 10rem;
+    height: 5.8rem;
+    float: left;
+    margin-right: .8rem;
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 0);
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+}
+
+#posts > ul > li > a > p.categ {
+    padding-bottom: .1rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+#posts > ul > li > a > p.categ > time {
+    float: right;
+    font-size: 1rem;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #b0a99e;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+html.night #posts > ul > li > a > p.categ > time {
+    color: #666;
+}
+
+#posts > ul > li > a > h2 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    height: 4.5rem;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 700;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    #posts > ul > li > a > h2 {
+        height: auto;
+        display: block;
+    }
+}
+
+#posts > ul > li > a > p:last-child {
+    clear: left;
+    padding-top: .5rem;
+    font-size: 1.3rem;
+    height: 3.1rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    #posts > ul > li > a > p:last-child {
+        clear: none;
+        margin-left: 10.8rem;
+    }
+}
+
+@media (max-width: 479px) {
+
+    #posts > ul > li > a > p:last-child {
+        height: auto;
+    }
+}
+
+html.no-touch #posts > ul > li > a:hover > img,
+#posts > ul > li > a:active > img,
+html.focus #posts > ul > li > a:focus > img {
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 1);
+}
+
+html.no-touch #posts > ul > li > a:hover > p.categ,
+#posts > ul > li > a:active > p.categ,
+html.focus #posts > ul > li > a:focus > p.categ {
+    color: #f00;
+}
+
+html.night.no-touch #posts > ul > li > a:hover > p.categ,
+html.night #posts > ul > li > a:active > p.categ,
+html.night.focus #posts > ul > li > a:focus > p.categ {
+    color: #f44;
+}
+
+html.no-touch #posts > ul > li > a:hover > h2,
+#posts > ul > li > a:active > h2,
+html.focus #posts > ul > li > a:focus > h2 {
+    color: #f90;
+}
+
+html.no-touch #posts > ul > li > a:hover > p:last-child,
+#posts > ul > li > a:active > p:last-child,
+html.focus #posts > ul > li > a:focus > p:last-child {
+    color: #000;
+}
+
+html.night.no-touch #posts > ul > li > a:hover > p:last-child,
+html.night #posts > ul > li > a:active > p:last-child,
+html.night.focus #posts > ul > li > a:focus > p:last-child {
+    color: #fff;
+}

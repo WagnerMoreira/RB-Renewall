@@ -1,0 +1,327 @@
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    -ms-interpolation: bicubic;
+    image-rendering: optimizequality;
+    -webkit-tap-highlight-color: transparent;
+    quotes: '\201c' '\201d' '\2018' '\2019';
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-moz-selection { background: #f90; color: #fff; }
+::selection      { background: #f90; color: #fff; }
+
+.notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+html {
+    font-family: ubuntu, sans-serif;
+    line-height: 1;
+    background: #bada55;
+    cursor: default;
+    /*font-size: 62.5%;*/
+    font-size: 10px;
+}
+
+@media (max-width: 639px) {
+
+    html {
+        /*font-size: 50%;*/
+        font-size: 8px;
+    }
+}
+
+html:not(.focus) :focus,
+:not(:focus) {
+    outline: none;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 960px;
+}
+
+@media (min-width: 961px) and (max-width: 980px) {
+
+    #body-inside {
+        padding: 0 -webkit-calc(50% - 480px);
+        padding: 0 -moz-calc(50% - 480px);
+        padding: 0 -o-calc(50% - 480px);
+        padding: 0 calc(50% - 480px);
+    }
+}
+
+@media (max-width: 980px) {
+
+    body {
+        width: 100%;
+    }
+
+    #body-inside {
+        overflow: hidden;
+    }
+}
+
+a,
+.playerbtn,
+.mejs-playpause-button button {
+    -webkit-transition: -webkit-transform .2s cubic-bezier(0, 0, 0, 1);
+    transition: transform .2s cubic-bezier(0, 0, 0, 1);
+    display: inline-block;
+}
+
+a:active,
+.playerbtn:active,
+.mejs-playpause-button button:active {
+    -webkit-transform: scale(.9) scalez(1);
+    -ms-transform: scale(.9);
+    transform: scale(.9) scalez(1);
+}
+
+:not(input):not(textarea):not(html) {
+    cursor: inherit;
+}
+
+a[href],
+input[type='submit'],
+input[type='reset'],
+input[type='image'],
+select,
+summary,
+button {
+    cursor: pointer;
+}
+
+a.current {
+    pointer-events: none;
+    cursor: default;
+}
+
+a img {
+    border: 0;
+}
+
+@media (min-height: 320px) {
+
+    .fixed {
+        position: fixed !important;
+        z-index: 2000;
+        top: 0;
+    }
+}
+
+.meter.stars,
+meter.stars {
+    width: 6.2rem;
+    height: 1rem;
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2013%2010%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2213px%22%20height%3d%2210px%22%3e%3cpath%20d%3d%22M%205%200%20C%204.5527%200%203.4583%202.0574%203.23%202.945%20C%202.3542%202.8983%200.147%203.3556%200.0088%203.8015%20C%20-0.1295%204.2475%201.4003%205.9731%202.135%206.475%20C%201.822%207.3338%201.5534%209.6769%201.9152%209.9526%20C%202.2771%2010.2281%204.3176%209.2374%205%208.66%20C%205.6824%209.2374%207.7229%2010.2281%208.0848%209.9526%20C%208.4466%209.6769%208.178%207.3338%207.865%206.475%20C%208.5997%205.9731%2010.1295%204.2475%209.9912%203.8015%20C%209.853%203.3556%207.6458%202.8983%206.77%202.945%20C%206.5417%202.0574%205.4473%200%205%200%20Z%22%20fill%3d%22%23ccc%22/%3e%3c/svg%3e);
+    background-size: auto 100%;
+}
+
+meter.stars::-webkit-meter-bar {
+    background: transparent;
+}
+
+.meter.stars .indicator {
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2013%2010%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2213px%22%20height%3d%2210px%22%3e%3cpath%20d%3d%22M%205%200%20C%204.5527%200%203.4583%202.0574%203.23%202.945%20C%202.3542%202.8983%200.147%203.3556%200.0088%203.8015%20C%20-0.1295%204.2475%201.4003%205.9731%202.135%206.475%20C%201.822%207.3338%201.5534%209.6769%201.9152%209.9526%20C%202.2771%2010.2281%204.3176%209.2374%205%208.66%20C%205.6824%209.2374%207.7229%2010.2281%208.0848%209.9526%20C%208.4466%209.6769%208.178%207.3338%207.865%206.475%20C%208.5997%205.9731%2010.1295%204.2475%209.9912%203.8015%20C%209.853%203.3556%207.6458%202.8983%206.77%202.945%20C%206.5417%202.0574%205.4473%200%205%200%20Z%22%20fill%3d%22%23f90%22/%3e%3c/svg%3e);
+    background-size: auto 100%;
+}
+
+meter.stars::-webkit-meter-optimum-value {
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2013%2010%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2213px%22%20height%3d%2210px%22%3e%3cpath%20d%3d%22M%205%200%20C%204.5527%200%203.4583%202.0574%203.23%202.945%20C%202.3542%202.8983%200.147%203.3556%200.0088%203.8015%20C%20-0.1295%204.2475%201.4003%205.9731%202.135%206.475%20C%201.822%207.3338%201.5534%209.6769%201.9152%209.9526%20C%202.2771%2010.2281%204.3176%209.2374%205%208.66%20C%205.6824%209.2374%207.7229%2010.2281%208.0848%209.9526%20C%208.4466%209.6769%208.178%207.3338%207.865%206.475%20C%208.5997%205.9731%2010.1295%204.2475%209.9912%203.8015%20C%209.853%203.3556%207.6458%202.8983%206.77%202.945%20C%206.5417%202.0574%205.4473%200%205%200%20Z%22%20fill%3d%22%23f90%22/%3e%3c/svg%3e);
+    background-size: auto 100%;
+}
+
+meter.stars::-moz-meter-bar {
+    background: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2013%2010%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2213px%22%20height%3d%2210px%22%3e%3cpath%20d%3d%22M%205%200%20C%204.5527%200%203.4583%202.0574%203.23%202.945%20C%202.3542%202.8983%200.147%203.3556%200.0088%203.8015%20C%20-0.1295%204.2475%201.4003%205.9731%202.135%206.475%20C%201.822%207.3338%201.5534%209.6769%201.9152%209.9526%20C%202.2771%2010.2281%204.3176%209.2374%205%208.66%20C%205.6824%209.2374%207.7229%2010.2281%208.0848%209.9526%20C%208.4466%209.6769%208.178%207.3338%207.865%206.475%20C%208.5997%205.9731%2010.1295%204.2475%209.9912%203.8015%20C%209.853%203.3556%207.6458%202.8983%206.77%202.945%20C%206.5417%202.0574%205.4473%200%205%200%20Z%22%20fill%3d%22%23f90%22/%3e%3c/svg%3e);
+    background-size: auto 100%;
+}
+
+table.calendario {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: .4rem;
+    font-size: 1.4rem;
+    color: #333;
+    position: relative;
+    left: -.4rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    height: 19.4rem;
+}
+
+html.night table.calendario {
+    color: #ccc;
+}
+
+table.calendario > caption {
+    height: 3rem;
+    line-height: 3rem;
+    background: #504b47;
+    color: #fff;
+    border: solid transparent;
+    border-width: 0 4px;
+    background-clip: padding-box;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+html.night table.calendario > caption {
+    background-color: #333;
+}
+
+table.calendario > caption > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    opacity: 0;
+    color: #000;
+}
+
+table.calendario > tbody > tr > td > * {
+    display: block;
+    height: 2.4rem;
+    line-height: 2.2rem;
+    background: #ccc;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 3px;
+    width: 2.8rem;
+    -webkit-transition-property: -webkit-transform, background-color, border-color, color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease, ease;
+    transition-property: transform, background-color, border-color, color;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease, ease;
+}
+
+table.calendario > tbody > tr > td.prevmon > *,
+table.calendario > tbody > tr.prevmon > td > *,
+table.calendario > tbody > tr > td.nextmon > *,
+table.calendario > tbody > tr.nextmon > td > * {
+    background: transparent;
+    color: #ccc;
+}
+
+html.night table.calendario > tbody > tr > td > * {
+    background: #666;
+    border-color: #666;
+}
+
+html.night table.calendario > tbody > tr > td.prevmon > *,
+html.night table.calendario > tbody > tr.prevmon > td > *,
+html.night table.calendario > tbody > tr > td.nextmon > *,
+html.night table.calendario > tbody > tr.nextmon > td > * {
+    background: transparent;
+    color: #666;
+}
+
+table.calendario > tbody > tr > td > a {
+    background: #f90;
+    border-color: #f90;
+    color: #000;
+}
+
+table.calendario > tbody > tr > td.prevmon > a,
+table.calendario > tbody > tr.prevmon > td > a,
+table.calendario > tbody > tr > td.nextmon > a,
+table.calendario > tbody > tr.nextmon > td > a {
+    color: #f90 !important;
+}
+
+html.night table.calendario > tbody > tr > td > a {
+    background: #f90;
+    border-color: #f90;
+    color: #fff;
+}
+
+table.calendario > tbody > tr > td.today > span {
+    border-color: #333;
+}
+
+html.night table.calendario > tbody > tr > td.today > span {
+    border-color: #ccc;
+}
+
+table.calendario > tbody > tr > td.today > a {
+    border-color: #000;
+}
+
+html.night table.calendario > tbody > tr > td.today > a {
+    border-color: #fff;
+}
+
+.comentarios {
+    font-size: 1.4rem;
+}
+
+.comentarios:before {
+    font-family: blastdings;
+    content: '"';
+    padding-right: .8rem;
+    position: relative;
+    top: .2rem;
+}
+
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.playerbtn {
+    position: relative;
+    display: block;
+    border: 1px solid #f90;
+    background-image: -webkit-radial-gradient(center .4rem, farthest-side ellipse, #ffd601, #ffaf01 47.5%, #f90 50%, #ffaf01);
+    background-image: radial-gradient(farthest-side ellipse at center .4rem, #ffd601, #ffaf01 47.5%, #f90 50%, #ffaf01);
+    background-size: 350% 100%;
+    background-position: center top;
+    box-shadow: inset 0 1px #ff6,
+                inset 0 0 6px 2px #f90;
+    font-family: blastdings;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.playerbtn:before {
+    position: absolute;
+    content: '.';
+    text-shadow: 0 0 .9rem rgba(204, 51, 0, .42);
+    text-indent: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.playerbtn.playing:before {
+    content: '^';
+}

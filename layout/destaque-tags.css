@@ -1,0 +1,67 @@
+#destaque-tags {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: -.5rem 0 1.5rem !important;
+    color: #666;
+    vertical-align: top;
+}
+
+#destaque-tags * {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#destaque-tags > h1 {
+    font-size: 0 !important;
+    text-indent: -9001px;
+    line-height: 2rem !important;
+    height: 2rem !important;
+    float: left;
+}
+
+#destaque-tags > h1:before {
+    content: ',' !important;
+    font-size: 1.8rem !important;
+    line-height: 2rem !important;
+    line-height: calc(2rem) !important; /* ie9 */
+    color: #ffae00;
+    text-indent: 0;
+    float: left;
+}
+
+#destaque-tags > ul {
+    display: block;
+    padding-left: 2.5rem;
+}
+
+#destaque-tags > ul > li:not(:first-child):before {
+    content: '|';
+}
+
+#destaque-tags > ul > li > a {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    -webkit-transition-property: -webkit-transform, background, color;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    transition-property: transform, background, color;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease;
+    background: #fff;
+    color: #666;
+    border-radius: 4px;
+}
+
+html.night #destaque-tags > ul > li > a {
+    background: #202020;
+    color: #999;
+}
+
+html.no-touch #destaque-tags > ul > li > a:hover,
+#destaque-tags > ul > li > a:active,
+html.focus #destaque-tags > ul > li > a:focus,
+html.night.no-touch #destaque-tags > ul > li > a:hover,
+html.night #destaque-tags > ul > li > a:active,
+html.night.focus #destaque-tags > ul > li > a:focus {
+    background: #f90;
+    color: #fff;
+}

@@ -1,0 +1,1071 @@
+#blocoradio {
+    overflow: hidden;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    color: #605c57;
+    width: 30rem;
+    height: 31rem;
+    float: right;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+@media (max-width: 959px) {
+
+    #blocoradio {
+        display: none;
+    }
+}
+
+#blocoradio > header > h1 {
+    border-bottom: 3px solid;
+}
+
+#blocoradio > header > h1:before {
+    content: '~' !important;
+    font-size: 18px !important;
+}
+
+html.night #blocoradio {
+    color: #ccc;
+}
+
+#blocoradio b {
+    font-weight: 700;
+}
+
+#blocoradio h2 {
+    height: 49px;
+    background: #504b47;
+    margin: 0;
+    font-weight: 400;
+    text-indent: -9001px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: background .2s, margin-left .4s;
+    transition: background .2s, margin-left .4s;
+}
+
+html.night #blocoradio h2 {
+    background: #333;
+}
+
+#blocoradio h2:before {
+    content: 'agora';
+    font-size: 12px;
+    color: #ffae00;
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    text-indent: 0;
+}
+
+#blocoradio h2.novoagora {
+    margin-left: -100%;
+}
+
+#blocoradio cite {
+    font-style: normal;
+}
+
+#blocoradio h2 cite {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 11px;
+    top: 20px;
+    text-indent: 0;
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+    opacity: 1;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+}
+
+#blocoradio h2 cite.transparent {
+    opacity: 0;
+}
+
+/*#blocoradio.aside-unfolded h2 cite {*/
+#blocoradio h2 cite.aside-unfolded {
+    font-size: 12px;
+    font-weight: 700;
+    left: 13px;
+    width: 80px;
+    top: 18px;
+}
+
+#blocoradio header > a {
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    text-transform: lowercase;
+    color: #605e58;
+    -webkit-transition-property: -webkit-transform, color;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+    transition-property: transform, color;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+}
+
+html.night #blocoradio header > a {
+    color: #ccc;
+}
+
+#playermain {
+    background: #ddd;
+    height: 191px;
+    position: relative;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #playermain {
+    background: #504b47;
+}
+
+#blocoradio > footer {
+    text-align: left;
+    text-transform: none;
+    font-weight: 400;
+    background: #cdcdcd;
+    color: #504b47;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    padding: 8px 0 10px 14px;
+    -webkit-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+}
+
+html.night #blocoradio > footer {
+    background: #333;
+    color: #fff;
+}
+
+#blocoradio > footer:after {
+    display: none;
+}
+
+#blocoradio > footer a {
+    padding-right: 0;
+}
+
+#blocoradio > footer a:first-child {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    vertical-align: top;
+    position: relative;
+    top: -1px;
+}
+
+#blocoradio > footer a:first-child:before {
+    content: ';';
+    font-family: blastdings;
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+}
+
+#blocoradio > footer a:after {
+    display: none;
+}
+
+html.no-touch #blocoradio > footer a:hover,
+#blocoradio > footer a:active,
+html.focus #blocoradio > footer a:focus {
+    text-decoration: underline;
+}
+
+#playermain img, #dj, #descr, #song, #stats, #sources {
+    position: absolute;
+}
+
+#playermain img,
+#playermain:before {
+    left: 12px;
+    top: 12px;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+#playermain img {
+    background: #ddd;
+    opacity: 1;
+    -webkit-transition: background .2s, opacity .2s;
+    transition: background .2s, opacity .2s;
+}
+
+html.night #playermain img {
+    background: #333;
+}
+
+#playermain img.transparent {
+    opacity: 0;
+}
+
+#playermain:before {
+    position: absolute;
+    content: '';
+    /*background: #ccc url(carreg.gif) center no-repeat;*/
+}
+
+#dj {
+    left: 124px;
+    top: 13px;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 1);
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+#dj.transparent b {
+    color: rgba(51, 51, 51, 0);
+}
+
+html.night #dj {
+    color: rgba(204, 204, 204, 1);
+}
+
+html.night #dj.transparent b {
+    color: rgba(204, 204, 204, 0);
+}
+
+html.night #blocoradio {
+    color: #202020;
+}
+
+#descr {
+    background: #fff;
+    color: rgba(95, 91, 87, 1);
+    -webkit-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+    padding: 3px 5px;
+    left: 122px;
+    right: 10px;
+    top: 31px;
+    bottom: 79px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+#descr.transparent {
+    color: rgba(95, 91, 87, 0);
+}
+
+html.night #descr {
+    background: #202020;
+    color: rgba(204, 204, 204, 1);
+}
+
+html.night #descr.transparent {
+    color: rgba(204, 204, 204, 0);
+}
+
+/*#descr:before {*/
+#dj-before {
+    /*content: '';*/
+    height: 0;
+    /*left: -15px;*/
+    left: -17px;
+    position: absolute;
+    /*top: 14px;*/
+    top: 32px;
+    width: 0;
+    border: 8px solid transparent;
+    border-right-color: #fff;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+/*html.night #descr:before {*/
+html.night #dj-before {
+    border-right-color: #202020;
+}
+
+#song {
+    background: #504b47;
+    color: #fff;
+    left: 10px;
+    right: 65px;
+    bottom: 39px;
+    height: 30px;
+    text-indent: -9001px;
+    white-space: nowrap;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 2;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #song {
+    background: #202020;
+}
+
+#song:before {
+    content: '#';
+    font-family: blastdings;
+    background: #ffae00;
+    position: absolute;
+    left: 3px;
+    width: 17px;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 3px;
+    text-indent: 0;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+#song b {
+    display: block;
+    font-weight: 400;
+    position: absolute;
+    text-indent: 0;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 30px;
+    z-index: 30;
+    overflow: hidden;
+}
+
+#song b:before,
+#song b:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -40px;
+    width: 1px;
+    box-shadow: 0 0 4px 4px #504b47;
+    z-index: 40;
+}
+
+html.night #song b:before,
+html.night #song b:after {
+    box-shadow: 0 0 4px 4px #202020;
+}
+
+#song b:before {
+    left: -1px;
+}
+
+#song b:after {
+    right: -1px;
+}
+
+#song .volume {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#song .volume.hover {
+    right: 3px;
+}
+
+#song .volume > a {
+    background: #ffae00;
+    position: absolute;
+    z-index: 10;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+    width: 17px;
+    border-radius: 3px;
+}
+
+#song .volume > a:before {
+    content: '#';
+    font-family: blastdings;
+}
+
+#song .volume.medium > a {
+    background-position: -698px -20px;
+}
+
+#song .volume.quiet > a {
+    background-position: -673px -44px;
+}
+
+#song .volume.mute > a {
+    background-position: -673px -17px;
+}
+
+#song .volume .ui-slider,
+#song .volume .ui-slider-range {
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+#song .volume .ui-slider {
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    right: 10px;
+    background: #2b2b2b;
+    border-color: #333;
+    box-shadow: 0 1px 0 0 #222 inset;
+}
+
+#song .volume .slidewrapper {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 20px;
+    right: 0;
+    background: #504b47;
+    overflow: hidden;
+}
+
+#song .volume .slidewrapper > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#song .volume.hover .ui-slider {
+    left: 20px;
+}
+
+#song .volume .ui-slider-range {
+    height: 100%;
+    background-position: left bottom;
+    background: #d70;
+    border-color: #b50;
+    box-shadow: 0 1px 0 0 #f90 inset;
+    margin: -1px;
+}
+#song .volume .ui-slider-handle {
+    box-shadow:
+        0    -8px 0    0   #ff9900 inset,
+        0   -22px 9px -9px #ffae00 inset,
+        0     0   0    1px #ffce5e inset,
+        0   -20px 0    0   #ffae00 inset;
+    border-radius: 3px;
+    border: 1px solid #f90;
+    background: #f90;
+    margin-left: -3px;
+    top: -8px;
+    bottom: -8px;
+    position: absolute;
+    width: 6px;
+}
+
+#pastsongs {
+    position: absolute;
+    background: #504b47;
+    left: 10px;
+    right: 10px;
+    bottom: 41px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px 5px 0 15px;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 17px;
+    -webkit-transition: background .2s, height .2s, opacity .2s;
+    transition: background .2s, height .2s, opacity .2s;
+}
+
+html.night #pastsongs {
+    background: #202020;
+}
+
+#pastsongs h1 {
+    text-transform: lowercase;
+    color: #ffae00;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#pastsongs a {
+    text-transform: lowercase;
+    color: #fff;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    font-size: 10px;
+}
+
+#pastsongs li {
+    position: relative;
+    text-indent: -9001px;
+    overflow: hidden;
+}
+
+#pastsongs li:nth-child(2n+1) {
+    background: #333;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #pastsongs li:nth-child(2n+1) {
+    background: #000;
+}
+
+#pastsongs time,
+#pastsongs b {
+    position: absolute;
+    top: 0;
+    text-indent: 0;
+}
+
+#pastsongs time {
+    color: #ffae00;
+    left: 4px;
+}
+
+#pastsongs b {
+    left: 40px;
+    font-weight: 400;
+    color: #fff;
+    right: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#song:hover + #pastsongs:not(.js),
+#pastsongs:not(.js):hover,
+#pastsongs.active {
+    height: 138px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#stats {
+    bottom: 9px;
+    left: 70px;
+    -webkit-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+}
+
+html.night #stats {
+    color: #fff;
+}
+
+#sources {
+    left: 10px;
+    right: 10px;
+    bottom: 9px;
+}
+
+#sources li {
+    float: left;
+    position: relative;
+    margin-right: 3px;
+    width: 26px;
+    height: 26px;
+}
+
+#sources a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-indent: -9001px;
+    overflow: hidden;
+    box-shadow:
+        0   -20px  0   -8px #b0aeac inset,
+        0   -22px  4px -4px #bbb9b5 inset,
+        0     0    0    1px #d4d3d0 inset,
+        0   -25px  0    0   #bbb9b5 inset;
+    border-radius: 3px;
+    background: #b0aeac;
+    border: 1px solid #a4a2a0;
+}
+
+#sources #srchtml5 {
+    height: 57px;
+    margin-right: 0px;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    width: 57px;
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    color: #504b47;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+html.night #sources #srchtml5 {
+    color: #202020;
+}
+
+#sources #srchtml5:before {
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-right-radius: 50px 72px;
+    top: 20px;
+    content: '';
+    height: 50px;
+    left: -29px;
+    position: absolute;
+    width: 50px;
+}
+
+#sources #srchtml5:after {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 40px;
+    border-top: 25px solid;
+}
+
+#srchtml5 a {
+    border: 0;
+    box-shadow: none;
+    z-index: 60;
+    background: #504b47;
+    border-radius: 30px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+
+html.night #srchtml5 a {
+    background: #202020;
+}
+
+#srchtml5 strong {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    width: 47px;
+    border-radius: 47px;
+    -webkit-transition: -webkit-transform .2s cubic-bezier(0, 0, 0, 1);
+    transition: transform .2s cubic-bezier(0, 0, 0, 1);
+    line-height: 47px;
+}
+
+#srchtml5 strong:before {
+    font-size: 21px;
+}
+
+#srchtml5 a:active strong {
+    -webkit-transform: scale(.9) scalez(1);
+    -ms-transform: scale(.9);
+    transform: scale(.9) scalez(1);
+}
+
+#srcm3u a:before,
+#srcasx a:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: center no-repeat;
+}
+
+#srcm3u a:before {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2022%2022%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2222px%22%20height%3d%2222px%22%3e%3cpath%20d%3d%22M%2011.4478%200.9375%20L%200.7035%2011.4375%20L%2011.4478%2021.9375%20L%2022.1919%2011.4375%20L%2011.4478%200.9375%20Z%22%20fill%3d%22%23e4e4e4%22/%3e%3cpath%20d%3d%22M%2021.9937%201.5%20C%2021.7141%201.5%202.9822%2012.5664%202.9822%2012.5664%20L%209.3193%2013.1106%20L%200%2022%20L%2019.1979%2010.3894%20L%2013.2334%2010.3894%20C%2013.2334%2010.3894%2022.2732%201.5%2021.9937%201.5%20Z%22%20fill%3d%22%23605c57%22/%3e%3c/svg%3e);
+}
+
+#srcasx a:before {
+    background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221.0%22%20standalone%3d%22no%22%3f%3e%3c%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3a//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3e%3csvg%20viewBox%3d%220%200%2022%2022%22%20version%3d%221.1%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%20x%3d%220%22%20y%3d%220%22%20width%3d%2222px%22%20height%3d%2222px%22%3e%3cpath%20d%3d%22M%200%2011%20C%200%2017.014%204.8259%2021.9006%2010.8165%2021.9985%20L%2010.8165%2019.0645%20C%206.4461%2018.967%202.9333%2015.3938%202.9333%2011%20L%200%2011%20ZM%2011%200%20C%2010.9388%200%2010.8775%200.0005%2010.8165%200.0015%20L%2010.8165%202.9355%20C%2010.8775%202.9341%2010.9387%202.9333%2011%202.9333%20C%2015.4551%202.9333%2019.0667%206.5449%2019.0667%2011%20L%2022%2011%20C%2022%204.9248%2017.0752%200%2011%200%20Z%22%20fill%3d%22%23605c57%22/%3e%3cpath%20d%3d%22M%202.9333%2011%20C%202.9333%206.6061%206.4462%203.0326%2010.8167%202.9352%20L%2010.8167%200.0018%20C%204.826%200.0997%200%204.986%200%2011%20L%202.9333%2011%20ZM%2019.0667%2011%20C%2019.0667%2015.4551%2015.4551%2019.0667%2011%2019.0667%20L%2010.8167%2019.0648%20L%2010.8167%2021.9982%20L%2011%2022%20C%2017.0752%2022%2022%2017.0752%2022%2011%20L%2019.0667%2011%20Z%22%20fill%3d%22%23e4e4e4%22/%3e%3cpath%20d%3d%22M%207.8833%206.9667%20L%208.0667%2015.4%20L%2015.7666%2011.1833%20L%207.8833%206.9667%20Z%22%20fill%3d%22%23e4e4e4%22/%3e%3c/svg%3e);
+}
+
+#nextprogs {
+    overflow: hidden;
+    width: 113px;
+    position: absolute;
+    right: 0;
+    top: -49px;
+    height: 49px;
+    -webkit-transition: width .2s;
+    transition: width .2s;
+}
+
+#nextprogs h1,
+#nextprogs li:first-child {
+    font-size: 12px;
+    text-transform: lowercase;
+    font-weight: 400;
+    color: #ffae00;
+}
+
+#nextprogs h1 {
+    position: absolute;
+    width: 80px;
+    top: 3px;
+    left: 12px;
+    margin: 0;
+}
+
+#nextprogs a {
+    position: absolute;
+    text-indent: -9001px;
+    overflow: hidden;
+    line-height: 49px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    background: #333;
+    color: #f90;
+    z-index: 20;
+    -webkit-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+
+#nextprogs a:before {
+    content: '>';
+    font-family: blastdings;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+html.night #nextprogs a {
+    background: #000;
+}
+
+html.no-touch #nextprogs a:hover,
+#nextprogs a:active,
+html.focus #nextprogs a:focus {
+    background: #222;
+    color: #fff;
+}
+
+html.night.no-touch #nextprogs a:hover,
+html.night #nextprogs a:active,
+html.night.focus #nextprogs a:focus {
+    background-color: #111;
+}
+
+#nextprogs dl {
+    background: #504b47;
+    color: #b2b0ae;
+    width: 279px;
+    height: 100%;
+    margin-top: 6px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #nextprogs dl {
+    background: #333;
+}
+
+#nextprogs dt {
+    font-weight: 700;
+    border-left: 1px solid #333;
+    float: left;
+    width: 93px;
+    height: 36px;
+    position: relative;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+html.night #nextprogs dt {
+    border-color: #000;
+}
+
+#nextprogs cite {
+    display: block;
+    height: 49px;
+    position: absolute;
+    left: -1px;
+    right: 0;
+    top: -6px;
+    padding: 18px 0 0 13px;
+    z-index: 15;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+#nextprogs cite.transparent {
+    opacity: 0;
+}
+
+#nextprogs dd {
+    margin-left: -81px;
+    float: left;
+    width: 81px;
+}
+
+#nextprogs li {
+    opacity: 0;
+}
+
+#nextprogs li:first-child {
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+#nextprogs li:first-child + li,
+#nextprogs li.dj {
+    font-size: 10px;
+    color: #fff;
+    line-height: 12px;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+#nextprogs.aside-unfolded {
+    width: 207px;
+}
+
+#nextprogs.aside-unfolded h1 {
+    opacity: 0;
+}
+
+#nextprogs.aside-unfolded li:first-child {
+    opacity: 1;
+}
+
+#nextprogs.aside-unfolded dt:hover cite {
+    opacity: 0;
+}
+
+#nextprogs.aside-unfolded dt:hover + dd li:first-child + li,
+#nextprogs.aside-unfolded dt:hover + dd li.dj {
+    opacity: 1;
+}
+
+#nextprogs.novoagora,
+#nextprogs.novoagora2 {
+    width: 300px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+#nextprogs.novoagora dt:first-child cite.novoagora,
+#nextprogs cite.novoagora {
+    -webkit-transition: color .4s;
+    transition: color .4s;
+    color: #fff;
+}
+
+#nextprogs.novoagora dt:first-child cite.novoagora {
+    font-size: 18px;
+    top: -4px;
+    left: -3px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#nextprogs.aside-unfolded li.novoagora {
+    position: relative;
+}
+
+#nextprogs.novoagora dt {
+    margin-right: -6px;
+}
+
+#nextprogs.novoagora dt:first-child {
+    width: 187px;
+    margin-right: 0;
+}
+
+#nextprogs.novoagora dt + dd li:first-child {
+    opacity: 1;
+    margin-left: 6px;
+    position: relative;
+}
+#nextprogs.novoagora dt + dd li:first-child:after {
+    content: 'A seguir';
+    position: absolute;
+    left: 0;
+    background: #504b47;
+}
+
+#nextprogs.novoagora dt:first-child + dd li:first-child {
+    opacity: 0;
+}
+
+#playeroffline {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -49px;
+    height: 240px;
+    background: #ddd;
+    border-top: 49px solid #504b47;
+    z-index: 60;
+    -webkit-transition: background .2s, color .2s, border-color .2s;
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+html.night #playeroffline {
+    background: #504b47;
+    color: #ccc;
+    border-color: #333;
+}
+
+#playeroffline h2 {
+    overflow: visible;
+    font-size: 18px;
+    margin-top: -49px;
+    line-height: 49px;
+    text-indent: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#playeroffline p {
+    margin: 18px 20px 0;
+}
+
+#playeroffline a {
+    text-decoration: underline;
+    color: #000;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+#playeroffline h2::after {
+    content: '';
+    float: right;
+    width: 0;
+    height: 167px;
+}
+
+#playeroffline div:before {
+    content: '';
+    float: right;
+    clear: right;
+    width: 62px;
+    height: 62px;
+    margin-right: 10px;
+}
+
+html.night #playeroffline a {
+    color: #fff;
+}
+
+#playeroffline h2:before {
+    display: none;
+}
+
+#pedidos {
+    background: #e2e2e2;
+    padding: 0 10px;
+}
+
+#pedidos .throb {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#pedidos > .throb {
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#pedidos .invalid {
+    background: #f99;
+}
+
+#pedidos label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#pedidos label[for='recado'] {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#pedidos #nome,
+#pedidos #recado {
+    float: right;
+    width: 229px;
+    padding: 0;
+    margin-left: 6px;
+}
+
+#pedidos #recado {
+    height: 48px;
+}
+
+#pedidos #btrecado {
+    float: right;
+    width: 120px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+#pedidos #btlimpa {
+    border-color: transparent;
+    background: transparent;
+    color: #605c57;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#pedidos #btlimpa:hover {
+    text-decoration: underline;
+}
+
+#pedidos p {
+    margin: 11px 0;
+    position: relative;
+}
+
+#pedidos form {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+#pedidos form p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#pedidos form p:after {
+    content: '';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,247 @@
+#topblast {
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+
+    #topblast {
+        width: 50%;
+        padding-right: 1rem;
+        float: left;
+    }
+}
+
+#topblast > header {
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+html.night #topblast > header {
+    border-color: #000;
+}
+
+#topblast > header > p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+    color: #999;
+}
+
+#topblast > ol {
+    counter-reset: topblastrank;
+    height: 34rem;
+}
+
+#topblast > ol > li {
+    overflow: hidden;
+    border-top: 1rem solid transparent;
+    background-clip: padding-box !important;
+    position: relative;
+    -webkit-transition: height .2s, color .2s, background .2s;
+    transition: height .2s, color .2s, background .2s;
+    padding: 0 .5rem 0 12rem;
+}
+
+#topblast > ol > li:before {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#topblast > ol > li > img {
+    position: absolute;
+    left: 3rem;
+    top: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-top: -4rem;
+    border-radius: 7px;
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    z-index: 5;
+}
+
+#topblast > ol > li > h2 {
+    text-indent: -9001px;
+    font-size: 0;
+    height: 5rem;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    z-index: 3;
+}
+
+#topblast > ol > li > h2:before {
+    counter-increment: topblastrank;
+    content: counter(topblastrank);
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3rem;
+    height: 9rem;
+    line-height: 9rem;
+    line-height: calc(9rem); /* ie9 */
+    margin-top: -4.5rem;
+    text-align: center;
+    text-indent: 0;
+    z-index: 1;
+}
+
+#topblast > ol > li > h2 > * {
+    display: block;
+    text-indent: 0;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+#topblast > ol > li > h2 > cite {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#topblast > ol > li > h2 > span {
+    font-size: 1.4rem;
+}
+
+#topblast > ol > li > small {
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+    left: 0;
+    width: 3rem;
+    height: 100%;
+    text-indent: -9001px;
+    color: #504b47;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+html.night #topblast > ol > li > small {
+    color: #333;
+}
+
+#topblast > ol > li > small:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50%;
+    bottom: -50%;
+    border-left: 3rem solid;
+}
+
+#topblast > ol > li > audio,
+#topblast > ol > li > .mejs-audio {
+    position: relative;
+    z-index: 2;
+}
+
+#topblast > ol > li,
+#topblast > ol:not(.hover):hover > li:first-child,
+#topblast > ol.hover > li:first-child {
+    color: #fff;
+    height: 6rem;
+    background: rgba(80, 75, 71, 0);
+}
+
+#topblast > ol > li:first-child,
+#topblast > ol:not(.hover):hover > li:hover,
+#topblast > ol.hover > li.hover {
+    height: 10rem;
+    background: rgba(80, 75, 71, 1);
+}
+
+html.night #topblast > ol > li,
+html.night #topblast > ol:not(.hover):hover > li:first-child,
+html.night #topblast > ol.hover > li:first-child {
+    color: #202020;
+    background: rgba(51, 51, 51, 0);
+}
+
+html.night #topblast > ol > li:first-child,
+html.night #topblast > ol:not(.hover):hover > li:hover,
+html.night #topblast > ol.hover > li.hover {
+    background: rgba(51, 51, 51, 1);
+}
+
+#topblast > ol > li > img,
+#topblast > ol:not(.hover):hover > li:first-child > img,
+#topblast > ol.hover > li:first-child > img {
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 0);
+}
+
+#topblast > ol > li:first-child > img,
+#topblast > ol:not(.hover):hover > li:hover > img,
+#topblast > ol.hover > li.hover > img {
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 1);
+}
+
+#topblast > ol > li > h2,
+#topblast > ol:not(.hover):hover > li:first-child > h2,
+#topblast > ol.hover > li:first-child > h2 {
+    color: #fff;
+}
+
+#topblast > ol > li:first-child > h2,
+#topblast > ol:not(.hover):hover > li:hover > h2,
+#topblast > ol.hover > li.hover > h2,
+html.night #topblast > ol > li:first-child > h2,
+html.night #topblast > ol:not(.hover):hover > li:hover > h2,
+html.night #topblast > ol.hover > li.hover > h2 {
+    color: #f90;
+}
+
+#topblast > ol > li > h2 > cite,
+#topblast > ol:not(.hover):hover > li:first-child > h2 > cite,
+#topblast > ol.hover > li:first-child > h2 > cite {
+    color: #5a5752;
+}
+
+html.night #topblast > ol > li > h2 > cite,
+html.night #topblast > ol:not(.hover):hover > li:first-child > h2 > cite,
+html.night #topblast > ol.hover > li:first-child > h2 > cite {
+    color: #999;
+}
+
+#topblast > ol > li:first-child > h2 > cite,
+#topblast > ol:not(.hover):hover > li:hover > h2 > cite,
+#topblast > ol.hover > li.hover > h2 > cite,
+html.night #topblast > ol > li:first-child > h2 > cite,
+html.night #topblast > ol:not(.hover):hover > li:hover > h2 > cite,
+html.night #topblast > ol.hover > li.hover > h2 > cite {
+    color: #f90;
+}
+
+#topblast > ol > li > h2 > span,
+#topblast > ol:not(.hover):hover > li:first-child > h2 > span,
+#topblast > ol.hover > li:first-child > h2 > span {
+    color: #5a5752;
+}
+
+html.night #topblast > ol > li > h2 > span,
+html.night #topblast > ol:not(.hover):hover > li:first-child > h2 > span,
+html.night #topblast > ol.hover > li:first-child > h2 > span {
+    color: #999;
+}
+
+#topblast > ol > li:first-child > h2 > span,
+#topblast > ol:not(.hover):hover > li:hover > h2 > span,
+#topblast > ol.hover > li.hover > h2 > span,
+html.night #topblast > ol > li:first-child > h2 > span,
+html.night #topblast > ol:not(.hover):hover > li:hover > h2 > span,
+html.night #topblast > ol.hover > li.hover > h2 > span {
+    color: #fff;
+}

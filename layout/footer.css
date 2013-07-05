@@ -1,0 +1,22 @@
+#sitefooter {
+    clear: both;
+    min-height: 31.7rem;
+    padding-top: 0 !important;
+    margin-bottom: 0;
+}
+
+html.player-unfolded #sitefooter {
+    min-height: 37.7rem;
+    border-bottom: 2px solid transparent;
+}
+
+#bottomnav {
+    height: 21.3rem;
+    background: #504b47;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+html.night #bottomnav {
+    background: #333;
+}
