@@ -1,22 +1,69 @@
 #sitefooter {
-    clear: both;
-    min-height: 31.7rem;
-    padding-top: 0 !important;
-    margin-bottom: 0;
+  clear: both;
+  /*min-height: 31.7rem;*/
+  padding-top: 0 !important;
+  margin-bottom: 0;
 }
 
 html.player-unfolded #sitefooter {
-    min-height: 37.7rem;
-    border-bottom: 2px solid transparent;
+  min-height: 37.7rem;
+  border-bottom: 2px solid transparent;
 }
 
 #bottomnav {
-    height: 21.3rem;
-    background: #504b47;
-    -webkit-transition: background .2s;
-    transition: background .2s;
+  height: 21.3rem;
+  background: #504b47;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+
+#bottomnav h2 {
+  background: url (../layout/images/plus.png) ;
+  display: inline-block;
+  font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 0 5px 0;
+  font-size: 13px;
+}
+
+#bottomnav h2 strong {
+  margin-left: 6px;
+}
+
+.bottomnavMenu {
+  float: left;
+  display: inline-block;
+  width: 14rem;
+  color: #fff;
+  font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+  margin-right: 40px;
+}
+
+.submenu{
+  position: relative;
+  top: 15px;
+}
+
+.bottomnavMenu li a{
+  font-size: 11px;
 }
 
 html.night #bottomnav {
-    background: #333;
+  background: #333;
+}
+#sitefooter #sitecopyright {
+  color: #fff;
+  font-family: Trebuchet MS;
+}
+
+#sitefooter #sitecopyright .follow-blast {
+  display: inline-block;
+  margin-left: 304px;
+  margin-top: 5px;
+}
+
+#sitefooter #sitecopyright .footer-logo {
+  float: right;
+  display: inline-block;
 }

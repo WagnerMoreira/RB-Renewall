@@ -107,74 +107,273 @@ html.night #breadcrumb > a {
     color: #fff;
 }
 
+#subsite-links a strong {
+  font-weight: bold;
+}
+#subsite-links p {
+    display: inline-block;
+    float: right;
+}
+
+#subsite-links p strong {
+  color: #000;
+  font-weight: bold;
+}
+
 html.home #miolo section {
     position: relative;
     margin-bottom: 2rem;
 }
 
 html.home #miolo section:after {
-    content: '';
-    clear: both;
+  content: '';
+  clear: both;
 }
 
 html.home #miolo section > h1,
 html.home #miolo section > header > h1 {
-    height: 3rem;
-    text-transform: uppercase;
-    font-family: ubuntutitling, sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 2.3rem;
-    color: #f90;
-    letter-spacing: -1px;
+  height: 3rem;
+  text-transform: uppercase;
+  font-family: ubuntutitling, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.3rem;
+  color: #f90;
+  letter-spacing: -1px;
 }
 
 html.home #miolo section > h1:before,
 html.home #miolo section > header > h1:before {
-    content: '+';
-    font-family: blastdings;
-    font-weight: 400;
-    display: inline-block;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    line-height: calc(2.5rem); /* ie9 */
-    vertical-align: top;
-    padding-right: .8rem;
+  content: '+';
+  font-family: blastdings;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  line-height: calc(2.5rem); /* ie9 */
+  vertical-align: top;
+  padding-right: .8rem;
 }
 
 html.home #miolo section > h1 > a,
 html.home #miolo section > header > h1 > a {
-    text-transform: none;
-    color: #ccc;
-    font-size: 2rem;
+  text-transform: none;
+  color: #ccc;
+  font-size: 2rem;
 }
 
 html:not(.home) #miolo :not(article) aside {
-    position: relative;
-    margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 html:not(.home) #miolo :not(article) aside > h1 {
-    font-family: ubuntutitling, sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: #f90;
-    margin-bottom: .5rem;
-    letter-spacing: -.1rem;
+  font-family: ubuntutitling, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f90;
+  margin-bottom: .5rem;
+  letter-spacing: -.1rem;
+}
+
+#miolo .menu-blog h2 {
+  font-family: ubuntutitling, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f90;
+  margin-bottom: .5rem;
+  letter-spacing: -.1rem;
+}
+
+#miolo .menu-blog ul li {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+}
+
+#miolo .menu-blog ul li.special {
+  color: #FF9900;
+}
+
+.blog-text {
+  width: 22rem;
+}
+
+.blog-img {
+  border: 2px #ccc solid;
+  float: right;
+}
+
+.blog-img:hover {
+  border: 2px #f90 solid;
+  transition: all 0.2s linear;
+}
+
+/* Social Bar */
+.social-container {
+  float: right;
+  display: block;
+  position: relative;
+  bottom: 22px;
+}
+
+.social-bar ul{
+  width: 10rem;
+}
+
+ul.social-bar li {
+  display: inline-block;
+  width: 25px;
+  margin: 0 10px 0 0px;
+}
+
+.gplus-icon:hover{
+  -webkit-transform: scale(.9) scalez(1);
+  -ms-transform: scale(.9);
+  transform: scale(.9) scalez(1);
+}
+.tt-icon {
+    margin-left: 4px;
+}
+
+.tt-icon:hover{
+  -webkit-transform: scale(.9) scalez(1);
+  -ms-transform: scale(.9);
+  transform: scale(.9) scalez(1);
+}
+
+.fb-icon:hover{
+  -webkit-transform: scale(.9) scalez(1);
+  -ms-transform: scale(.9);
+  transform: scale(.9) scalez(1);
+}
+
+.header-text {
+  background: url(../layout/images/bg-header-text.png);
 }
 
 @media (min-width: 960px) {
-
+    .menu-blog {
+        float: left;
+        width: 14rem;
+    }
     .meio-holder {
         float: left;
         width: 62rem;
+    }
+
+    .meio-holder-blog {
+        float: left;
+        width: 46rem;
     }
 
     .meio-holder2 {
         float: right;
         width: 30rem;
     }
+
+    .blog-ultimas {
+      width: 30rem;
+      margin-right: -2rem;
+      margin-bottom: 3.1rem !important;
+    }
+
+    .blog-ultimas > ul > li{
+      color: #e4e4e4;
+      -webkit-transition: color .2s;
+      transition: color .2s;
+      display: inline-block;
+      padding-right: 2rem;
+      vertical-align: top;
+      width: 100%;
+    }
+
+    .blog-ultimas > ul > li > a {
+      display: block;
+      padding: .8rem 0;
+      position: relative;
+      color: #666;
+      -webkit-transition-property: -webkit-transform, color;
+      -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+      transition-property: transform, color;
+      transition-timing-function: cubic-bezier(0, 0, 0, 1), ease;
+    }
+
+    .blog-ultimas > ul > li > a > img {
+      border-radius: 5px;
+      width: 10rem;
+      height: 5.8rem;
+      float: left;
+      margin-right: .8rem;
+      box-shadow: 0 0 0 2px rgba(255, 153, 0, 0);
+      -webkit-transition: box-shadow .2s;
+      transition: box-shadow .2s;
+    }
+
+    .blog-ultimas > ul > li > a > p.categ {
+      padding-bottom: .1rem;
+      -webkit-transition: color .2s;
+      transition: color .2s;
+    }
+
+    .blog-ultimas > ul > li > a > h2 {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      height: 4.5rem;
+      display: table-cell;
+      vertical-align: middle;
+      font-weight: 700;
+      -webkit-transition: color .2s;
+      transition: color .2s;
+    } 
+}
+
+.blog-ultimas h2.titulo {
+  font-family: ubuntutitling, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f90;
+  margin-bottom: .5rem;
+  letter-spacing: -.1rem;
+}
+
+html.no-touch .blog-ultimas > ul > li > a:hover > img,
+.blog-ultimas > ul > li > a:active > img,
+html.focus .blog-ultimas > ul > li > a:focus > img {
+  box-shadow: 0 0 0 2px rgba(255, 153, 0, 1);
+}
+
+html.no-touch .blog-ultimas > ul > li > a:hover > p.categ,
+.blog-ultimas > ul > li > a:active > p.categ,
+html.focus .blog-ultimas > ul > li > a:focus > p.categ {
+  color: #f00;
+}
+
+html.night.no-touch .blog-ultimas > ul > li > a:hover > p.categ,
+html.night .blog-ultimas > ul > li > a:active > p.categ,
+html.night.focus .blog-ultimas > ul > li > a:focus > p.categ {
+  color: #f44;
+}
+
+html.no-touch .blog-ultimas > ul > li > a:hover > h2,
+.blog-ultimas > ul > li > a:active > h2,
+html.focus .blog-ultimas > ul > li > a:focus > h2 {
+  color: #f90;
+}
+
+html.no-touch .blog-ultimas > ul > li > a:hover > p:last-child,
+.blog-ultimas > ul > li > a:active > p:last-child,
+html.focus .blog-ultimas > ul > li > a:focus > p:last-child {
+  color: #000;
+}
+
+html.night.no-touch .blog-ultimas > ul > li > a:hover > p:last-child,
+html.night .blog-ultimas > ul > li > a:active > p:last-child,
+html.night.focus .blog-ultimas > ul > li > a:focus > p:last-child {
+  color: #fff;
 }
 
 .contraste {

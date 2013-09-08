@@ -77,7 +77,7 @@ article > header > p.time {
 
 article > header > p.permalink,
 article > header > p.comentarios {
-    float: right;
+    float: left;
 }
 
 article > header > p:before {

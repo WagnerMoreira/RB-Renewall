@@ -34,15 +34,15 @@ $(window).on('statechange', function(){
     });
 });
 
-$(function(){
-    setTimeout(function(){
-        $(document).on('click', 'a', function(e){
-            if (e.isDefaultPrevented() || $(this).attr('href').indexOf('#') != -1) return false;
-            History.pushState({scroll: $(window).scrollTop()}, 'Carregando...', $(this).attr('href'));
-            return false;
-        });
-    }, 0);
-});
+//$(function(){
+//    setTimeout(function(){
+//        $(document).on('click', 'a', function(e){
+//            if (e.isDefaultPrevented() || $(this).attr('href').indexOf('#') != -1) return false;
+//            History.pushState({scroll: $(window).scrollTop()}, 'Carregando...', $(this).attr('href'));
+//            return false;
+//        });
+//    }, 0);
+//});
 
 // função splice
 
