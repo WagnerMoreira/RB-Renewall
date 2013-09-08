@@ -49,6 +49,11 @@ html.player-unfolded #sitefooter {
   font-size: 11px;
 }
 
+.bottomnavMenu li a:hover {
+  color: #f90;
+  transition : all 0.2s ease;
+}
+
 html.night #bottomnav {
   background: #333;
 }
@@ -66,4 +71,20 @@ html.night #bottomnav {
 #sitefooter #sitecopyright .footer-logo {
   float: right;
   display: inline-block;
+}
+
+.rotate{
+  position: relative;
+  display: inline-block;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.rotate:hover {
+  -moz-transform: scale(1.2) rotate(90deg) translate(0px);
+ -webkit-transform: scale(1.2) rotate(90deg) translate(0px);
+  -o-transform: scale(1.2) rotate(90deg) translate(0px);
+  transform: scale(1.2) rotate(90deg) translate(0px);
 }
