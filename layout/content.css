@@ -205,6 +205,21 @@ html:not(.home) #miolo :not(article) aside > h1 {
   color: #FF9900;
 }
 
+#miolo .grid-membros {
+  float: left;
+  width: 31rem;
+}
+
+#miolo .grid-membros h2 {
+  font-family: ubuntutitling, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f90;
+  margin-bottom: .5rem;
+  letter-spacing: -.1rem;
+}
+
 .blog-text {
   width: 22rem;
 }
@@ -277,6 +292,11 @@ ul.social-bar li {
         width: 46rem;
     }
 
+    .meio-holder-membro {
+        float: left;
+        width: 29rem;
+        margin-left: 15px;
+    }
     .meio-holder2 {
         float: right;
         width: 30rem;

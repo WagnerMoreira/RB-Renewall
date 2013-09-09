@@ -10,7 +10,7 @@ var document = window.document,
 
 // XXX
 $(function(){
-    $('body').prepend('<div style="z-index:1;border:1px solid black;position:absolute;right:0;top:0;background:white;padding:0.4rem;"><a href="index.html" style="text-decoration:underline;">Principal</a><br><a href="postlist.html" style="text-decoration:underline;">Lista posts</a><br><a href="post.html" style="text-decoration:underline;">Um post</a><br><a href="blogs.html" style="text-decoration:underline;">Blogs</a><br><a href="equipe.html" style="text-decoration:line-through;">Equipe</a><br><a href="resenhas.html" style="text-decoration:line-through;">Resenhas</a><br><a href="podcasts.html" style="text-decoration:line-through;">Podcasts</a></div>');
+    $('body').prepend('<div style="z-index:1;border:1px solid black;position:absolute;right:0;top:0;background:white;padding:0.4rem;"><a href="index.html" style="text-decoration:underline;">Principal</a><br><a href="postlist.html" style="text-decoration:underline;">Lista posts</a><br><a href="post.html" style="text-decoration:underline;">Um post</a><br><a href="blogs.html" style="text-decoration:underline;">Blogs</a><br><a href="equipe.html" style="text-decoration: underline;">Equipe</a><br><a href="resenhas.html" style="text-decoration:line-through;">Resenhas</a><br><a href="podcasts.html" style="text-decoration:line-through;">Podcasts</a></div>');
 });
 // XXX
 

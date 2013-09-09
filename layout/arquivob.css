@@ -1,0 +1,121 @@
+#slider {
+	background: #33CCCC;
+	height: 110px;
+}
+
+#banner .img-banner {
+	height: 16rem;
+}
+
+.meio-holder-arquivob {
+	float: left;
+	width: 46rem;
+	padding: 20px 0 0 0;
+}
+
+.menu-arquivob  {
+	float: left;
+	width: 14rem;
+}
+
+.menu-arquivob h2 {
+  font-family: ubuntutitling, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #33CCCC;
+  padding-top: 1rem;
+  margin-bottom: .5rem;
+  letter-spacing: -.1rem;
+}
+
+.menu-arquivob ul li {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+}
+
+.menu-arquivob ul li:hover {
+  color: #33CCCC;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu-arquivob ul li.special {
+  color: #33CCCC;
+}
+
+.arquivob-title, .arquivob-menu h2 {
+	color: #33CCCC!important;
+}
+
+.arquivob-underline {
+	text-decoration: underline;
+}
+
+.arquivob-links {
+	color: #666;
+}
+.arquivob-links:hover{
+	color: #33CCCC!important;
+}
+
+.arquivob-img {
+  border: 2px #ccc solid;
+  float: right;
+}
+
+.arquivob-img:hover {
+  border: 2px #33cccc solid;
+  transition: all 0.2s linear;
+}
+
+.arquivob-ultimas h2 {
+	color: #33CCCC!important;
+}
+
+html.no-touch .arquivob-ultimas > ul > li > a:hover > img,
+.arquivob-ultimas > ul > li > a:active > img,
+html.focus .arquivob-ultimas > ul > li > a:focus > img {
+  box-shadow: 0 0 0 2px #33cccc;
+}
+
+html.no-touch .arquivob-ultimas > ul > li > a:hover > p.categ,
+.arquivob-ultimas > ul > li > a:active > p.categ,
+html.focus .arquivob-ultimas > ul > li > a:focus > p.categ {
+  color: #33cccc;
+}
+
+html.night.no-touch .arquivob-ultimas > ul > li > a:hover > p.categ,
+html.night .arquivob-ultimas > ul > li > a:active > p.categ,
+html.night.focus .arquivob-ultimas > ul > li > a:focus > p.categ {
+  color: #33cccc;
+}
+
+html.no-touch .arquivob-ultimas > ul > li > a:hover > h2,
+.arquivob-ultimas > ul > li > a:active > h2,
+html.focus .arquivob-ultimas > ul > li > a:focus > h2 {
+  color: #33cccc;
+}
+
+html.no-touch .arquivob-ultimas > ul > li > a:hover > p:last-child,
+.arquivob-ultimas > ul > li > a:active > p:last-child,
+html.focus .arquivob-ultimas > ul > li > a:focus > p:last-child {
+  color: #000;
+}
+
+html.night.no-touch .arquivob-ultimas > ul > li > a:hover > p:last-child,
+html.night .arquivob-ultimas > ul > li > a:active > p:last-child,
+html.night.focus .arquivob-ultimas > ul > li > a:focus > p:last-child {
+  color: #fff;
+}
+
+.arquivob-holder2 {
+	padding-top: 20px;
+}
+
+.di {
+	display: inline;
+}

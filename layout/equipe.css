@@ -1,0 +1,63 @@
+.row {
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+.member-avatar {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin: 0 5px 10px 0;
+}
+
+.member-avatar a {
+	border: 2px #ccc solid;
+}
+
+.member-avatar a:hover {
+	border: 2px  #f90 solid;
+	transition : all 0.4s ease;
+}
+
+.member-avatar img {
+	width: 70px;
+	height: 70px;
+	border: none;
+}
+
+.meio-holder-membro h2 {
+	font-family: ubuntutitling, sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: #f90;
+	margin-bottom: .5rem;
+	letter-spacing: -.1rem;
+}
+
+.meio-holder-membro .bio {
+	font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+	font-size: 13px;
+}
+
+.meio-holder-membro .bio .avatar {
+	float: left;
+	padding: 0 15px 10px 0;
+}
+
+.meio-holder-membro .bio .emote {
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	left: 10px;
+}
