@@ -1,330 +1,320 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="no-touch focus">
-<head>
-<meta charset="utf-8">
-<title>Rádio Blast! AGORA VAI</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" media="screen, handheld, projection, tv" type="text/css" href="layout/style.css">
-<!--[if IE 9]>
-<link rel="stylesheet" type="text/css" href="layout/style-ie9.css">
-<![endif]-->
-<script type="text/javascript" src="layout/modernizr.js"></script>
-<script type="text/javascript" src="layout/jquery-1.8.1.js"></script>
-<script type="text/javascript" src="layout/jquery.meterShim.js"></script>
-<script type="text/javascript" src="layout/jquery.once.js"></script>
-<script type="text/javascript" src="layout/jquery.history.js"></script>
-<script type="text/javascript" src="layout/waypoints.js"></script>
-<script type="text/javascript" src="layout/mediaelementjs/mediaelement-and-player.js"></script>
-<script type="text/javascript" src="layout/syntaxhighlighter/scripts/shCore.js"></script>
-<script type="text/javascript" src="layout/syntaxhighlighter/scripts/shAutoloader.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title>Rádio Blast! AGORA VAI</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" media="screen, handheld, projection, tv" type="text/css" href="layout/style.css">
+		<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="layout/style-ie9.css">
+		<![endif]-->
+		<script type="text/javascript" src="layout/modernizr.js"></script>
+		<script type="text/javascript" src="layout/jquery-1.8.1.js"></script>
+		<script type="text/javascript" src="layout/jquery.meterShim.js"></script>
+		<script type="text/javascript" src="layout/jquery.once.js"></script>
+		<script type="text/javascript" src="layout/jquery.history.js"></script>
+		<script type="text/javascript" src="layout/waypoints.js"></script>
+		<script type="text/javascript" src="layout/mediaelementjs/mediaelement-and-player.js"></script>
+		<script type="text/javascript" src="layout/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="layout/syntaxhighlighter/scripts/shAutoloader.js"></script>
+		<script type="text/javascript" src="layout/script.js"></script>
+		<script type="text/javascript" src="layout/script-contentloaded.js"></script>
+	</head>
+	<body>
+	<div id="body-inside">
 
-<script type="text/javascript" src="layout/script.js"></script>
-<script type="text/javascript" src="layout/script-contentloaded.js"></script>
-</head>
+	<header id="siteheader">
+		<hgroup>
+			<h1><img src="layout/logo.svg" alt="Rádio Blast!"></h1>
+			<h2>Uma explosão de conteúdo!</h2>
+		</hgroup>
 
-<body>
+		<div id="ad1"></div>
 
-<div id="body-inside">
+		<div id="topo">
+			<nav id="mainmenu">
+			<span id="mainmenu-before"></span>
+			<ul>
+			<li><a href="#">Home<span class="mainmenu-item-before"></span></a></li>
+			<li class="branch"><a href="#" tabindex="-1"><span class="mainmenu-item-before"></span>Rádio<span class="mainmenu-branch-after">
+			</span></a></li>
+			<li><a href="#"><span class="mainmenu-item-before"></span>Blogs</a></li>
+			<li><a href="#"><span class="mainmenu-item-before"></span>Galerias</a></li>
+			<li><a href="#"><span class="mainmenu-item-before"></span>Coberturas</a></li>
+			<li><a href="#"><span class="mainmenu-item-before"></span>Podcasts</a></li>
+			</ul>
+			<span id="mainmenu-after"></span>
+			</nav>
+			<nav id="radio-sub"
+			><h1>Rádio</h1
+			><ul
+			><li><a href="#">Programação</a></li
+			><li><a href="#">FAQ</a></li
+			><li><a href="#">Contato</a></li
+			><li><a href="#">Junte-se a nós!</a></li
+			><li id="lights"><a href="#">Luzes acesas</a></li
+			></ul
+			></nav>
+			<form id="busca" action="#" method="get"
+			><p><label for="q" data-phl>Busca</label
+			><input required type="search" name="q" id="q"
+			><!--<button>Ir</button
+			>--></p
+			></form>
+			<nav id="secmenu"
+			><h1><span id="secmenu-h1-before"></span><a href="#">Artigos</a></h1
+			><ul
+			><li><a href="#">Rádio Blast!</a></li
+			><li><a href="#">Música</a></li
+			><li><a href="#">Eventos</a></li
+			><li><a href="#">Games</a></li
+			><li><a href="#">Cinema</a></li
+			><li><a href="#">Anime e Mangá</a></li
+			><li><a href="#">Tecnologia</a></li
+			><li><a href="#">Japão</a></li
+			><li><a href="#">Coreia</a></li
+			><li><a href="#">Brasil</a></li
+			><li><a href="#">Ocidente</a></li
+			></ul
+			><p><a href="#">Feeds</a></p
+			><span id="secmenu-after"></span></nav>
+		</div>
+	</header>
 
-<header id="siteheader">
-<hgroup>
-<h1><img src="layout/logo.svg" alt="Rádio Blast!"></h1>
-<h2>Uma explosão de conteúdo!</h2>
-</hgroup>
+	<div id="miolo">
 
-<div id="ad1"></div>
+	<p id="breadcrumb"><a href="#">Home</a> » <a href="#">Radio</a> » <a href="#">Equipe</a></p>
 
-<div id="topo">
-<nav id="mainmenu"
-><span id="mainmenu-before"></span><ul
-><li><a href="#">Home<span class="mainmenu-item-before"></span></a></li
-><li class="branch"><a href="#" tabindex="-1"><span class="mainmenu-item-before"></span>Rádio<span class="mainmenu-branch-after"></span></a></li
-><li><a href="#"><span class="mainmenu-item-before"></span>Blogs</a></li
-><li><a href="#"><span class="mainmenu-item-before"></span>Galerias</a></li
-><li><a href="#"><span class="mainmenu-item-before"></span>Coberturas</a></li
-><li><a href="#"><span class="mainmenu-item-before"></span>Podcasts</a></li
-></ul
-><span id="mainmenu-after"></span></nav>
-<nav id="radio-sub"
-><h1>Rádio</h1
-><ul
-><li><a href="#">Programação</a></li
-><li><a href="#">FAQ</a></li
-><li><a href="#">Contato</a></li
-><li><a href="#">Junte-se a nós!</a></li
-><li id="lights"><a href="#">Luzes acesas</a></li
-></ul
-></nav>
-<form id="busca" action="#" method="get"
-><p><label for="q" data-phl>Busca</label
-><input required type="search" name="q" id="q"
-><!--<button>Ir</button
->--></p
-></form>
-<nav id="secmenu"
-><h1><span id="secmenu-h1-before"></span><a href="#">Artigos</a></h1
-><ul
-><li><a href="#">Rádio Blast!</a></li
-><li><a href="#">Música</a></li
-><li><a href="#">Eventos</a></li
-><li><a href="#">Games</a></li
-><li><a href="#">Cinema</a></li
-><li><a href="#">Anime e Mangá</a></li
-><li><a href="#">Tecnologia</a></li
-><li><a href="#">Japão</a></li
-><li><a href="#">Coreia</a></li
-><li><a href="#">Brasil</a></li
-><li><a href="#">Ocidente</a></li
-></ul
-><p><a href="#">Feeds</a></p
-><span id="secmenu-after"></span></nav>
-</div>
-</header>
-
-<div id="miolo">
-
-<p id="breadcrumb"><a href="#">Home</a> » <a href="#">Radio</a> » <a href="#">Equipe</a></p>
-
-<div class="grid-membros">
-	<h2>Equipe</h2>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-	<div class="row">
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-		<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
-	</div>
-</div>
-
-<div class="meio-holder-membro">
-
-<article itemscope itemtype="http://schema.org/BlogPosting">
-<header>
-<hgroup>
-	<div class="bio">
-		<img src="layout/images/kazuya.png" class="avatar" />
-		<h2 itemprop="headline">KAZUYA</h2>
-		<span><strong>Funções:</strong> DJ, colunista</span>
-		<span><strong>Programas:</strong> J-NERATION, JOE’S MUSIC</span>
-		<span><strong>Data de nascimento:</strong> 09/01/1986</span><br><br>
-		<span><strong>Localização:</strong> Belo Horizonte, MG</span>
-		<span><strong>Profissão:</strong> Coordenador de Livraria, ex-estudande de História.</span><br>
-		<span><strong>Na rádio desde:</strong> September/2007</span><br>
-		<span><strong>Emote:</strong><img src="layout/images/emote.png" class="emote" /></span>
+	<div class="grid-membros">
+		<h2>Equipe</h2>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
+		<div class="row">
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+			<div class="member-avatar"><a href="#"><img src="layout/images/default-avatar.png" alt="Avatar"></a></div>
+		</div>
 	</div>
 
-<p class="blog-text">Guitarrista em sua carreira solo, 雅-MIYAVI- é um dos maiores rockstars no Japão. Gosta de experimentar em suas composições que misturam vários outros estilos musicais, como o hiphop e até sapateado. Já fez duas apresentações no Brasil, que você pode conferir em nosso blog. Atualmente está em sua nova turnê nacional, intitulada de Screaming Out from TOKYO, que acontece na capital do país durante o mês de agosto.
+	<div class="meio-holder-membro">
 
-A grande notícia para os fãs brasileiros (e também ao redor do mundo) é que o cantor vai transmitir todos os próximos 12 shows ao vivo pela internet.</p>
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+	<header>
+	<hgroup>
+		<div class="bio">
+			<img src="layout/images/kazuya.png" class="avatar" />
+			<h2 itemprop="headline">KAZUYA</h2>
+			<span><strong>Funções:</strong> DJ, colunista</span>
+			<span><strong>Programas:</strong> J-NERATION, JOE’S MUSIC</span>
+			<span><strong>Data de nascimento:</strong> 09/01/1986</span><br><br>
+			<span><strong>Localização:</strong> Belo Horizonte, MG</span>
+			<span><strong>Profissão:</strong> Coordenador de Livraria, ex-estudande de História.</span><br>
+			<span><strong>Na rádio desde:</strong> September/2007</span><br>
+			<span><strong>Emote:</strong><img src="layout/images/emote.png" class="emote" /></span>
+		</div>
 
-</hgroup>
+	<p class="member-text">Guitarrista em sua carreira solo, 雅-MIYAVI- é um dos maiores rockstars no Japão. Gosta de experimentar em suas composições que misturam vários outros estilos musicais, como o hiphop e até sapateado. Já fez duas apresentações no Brasil, que você pode conferir em nosso blog. Atualmente está em sua nova turnê nacional, intitulada de Screaming Out from TOKYO, que acontece na capital do país durante o mês de agosto.
 
-<div class="social-container">
-	<ul class="social-bar">
-		<li><a href="#" class="gplus-icon"><img src="layout/images/gplus.png" /></a></li>
-		<li><a href="#" class="tt-icon"><img src="layout/images/twitter.png" /></a></li>
-		<li><a href="#" class="fb-icon"><img src="layout/images/facebook.png" /></a></li>
-	</ul>
-</div>
-</header>
-</article>
+	A grande notícia para os fãs brasileiros (e também ao redor do mundo) é que o cantor vai transmitir todos os próximos 12 shows ao vivo pela internet.</p>
 
-</div>
+	</hgroup>
 
-<div class="meio-holder2">
-	<div id="ad4"></div>
-
-	<div class="blog-ultimas">
-		<h2 class="titulo">ULTIMAS</h2>
-		<ul>
-			<li>
-				<a href="#">
-					<img src="http://flickholdr.com/100/58/blast" alt="">
-					<p class="categ">Rádio Blast! <time datetime="2010-06-06">Há XYZ dias</time></p>
-					<h2>Rádio Blast! completa 6 anos em grande estilo!</h2>
-					<p>Festa que acontece neste fim de semana só recebe convidados de gala</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="http://flickholdr.com/100/58/starcraft" alt="">
-					<p class="categ">Games <time datetime="2010-06-06">Há XYZ dias</time></p>
-					<h2>Recorde: StarCraft II custou mais de US$ 100 milhões para Blizzard</h2>
-					<p>However unreal it may seem, we are connected, you and I.</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="http://flickholdr.com/100/58/hikki" alt="">
-					<p class="categ">Música <time datetime="2010-06-06">Há XYZ dias</time></p>
-					<h2>Utada Hikaru fará pausa em carreira musical</h2>
-					<p>Some pilots get picked and become television programs. Some don't, become nothing.</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="http://flickholdr.com/100/58/blast" alt="">
-					<p class="categ">Rádio Blast! <time datetime="2010-06-06">Há XYZ dias</time></p>
-					<h2>Rádio Blast! completa 6 anos em grande estilo!</h2>
-					<p>Festa que acontece neste fim de semana só recebe convidados de gala</p>
-				</a>
-			</li>
+	<div class="social-container">
+		<ul class="social-bar">
+			<li><a href="#" class="gplus-icon"><img src="layout/images/gplus.png" /></a></li>
+			<li><a href="#" class="tt-icon"><img src="layout/images/twitter.png" /></a></li>
+			<li><a href="#" class="fb-icon"><img src="layout/images/facebook.png" /></a></li>
 		</ul>
 	</div>
-</div>
+	</header>
+	</article>
 
-</div>
+	</div>
 
-<footer id="sitefooter" class="contraste">
-<div id="bottomnav" class="contraste">
+	<div class="meio-holder2">
+		<div id="ad4"></div>
 
-	<ul class="bottomnavMenu">
-		<h2><img class="rotate" src="layout/images/plus.png" /><strong>Sobre</strong></h2>
-		<li><a href="#">Equipe</a></li>
-		<li><a href="#">Contato</a></li>
-		<li><a href="#">Programação</a></li>
-		<li><a href="#">FAQ</a></li>
-		<li><a href="#">Ajude-nos!</a></li>
-		<h2>Na Web</h2>
-		<li><a href="#">BlasTV!</a></li>
-		<li><a href="#">IRC</a></li>
-		<li><a href="#">Last.fm</a></li>
-		<li><a href="#">Twitter</a></li>
-	</ul>
+		<div class="blog-ultimas">
+			<h2 class="titulo">ULTIMAS</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://flickholdr.com/100/58/blast" alt="">
+						<p class="categ">Rádio Blast! <time datetime="2010-06-06">Há XYZ dias</time></p>
+						<h2>Rádio Blast! completa 6 anos em grande estilo!</h2>
+						<p>Festa que acontece neste fim de semana só recebe convidados de gala</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://flickholdr.com/100/58/starcraft" alt="">
+						<p class="categ">Games <time datetime="2010-06-06">Há XYZ dias</time></p>
+						<h2>Recorde: StarCraft II custou mais de US$ 100 milhões para Blizzard</h2>
+						<p>However unreal it may seem, we are connected, you and I.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://flickholdr.com/100/58/hikki" alt="">
+						<p class="categ">Música <time datetime="2010-06-06">Há XYZ dias</time></p>
+						<h2>Utada Hikaru fará pausa em carreira musical</h2>
+						<p>Some pilots get picked and become television programs. Some don't, become nothing.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://flickholdr.com/100/58/blast" alt="">
+						<p class="categ">Rádio Blast! <time datetime="2010-06-06">Há XYZ dias</time></p>
+						<h2>Rádio Blast! completa 6 anos em grande estilo!</h2>
+						<p>Festa que acontece neste fim de semana só recebe convidados de gala</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-	<ul class="bottomnavMenu">
-		<h2>Divulgue</h2>
-		<li><a href="#">Aliar-se</a></li>
-		<li><a href="#">No seu site</a></li>
-		<h2><img class="rotate" src="layout/images/plus.png" /><strong>Noticias</strong></h2>
-		<li><a href="#">Música</a></li>
-		<li><a href="#">Games</a></li>
-		<li><a href="#">Cinema</a></li>
-		<li><a href="#">Anime & Mangá</a></li>
-		<li><a href="#">Japão</a></li>
-		<li><a href="#">Tecnologia</a></li>
-	</ul>
-	<ul class="bottomnavMenu">
-		<h2><img class="rotate" src="layout/images/plus.png" /><strong>Blogs</strong></h2>
-		<li><a href="#">Arquivo B!</a></li>
-		<li><a href="#">Blast! Blog</a></li>
-		<li><a href="#">Chega de NHENHENHÉ!</a></li>
-		<li><a href="#">Fã-clube</a></li>
-		<li><a href="#">7ªrte</a></li>
-		<li><a href="#">A Regra É Kalkha</a></li>
-		<li><a href="#">Aquecimento</a></li>
-		<li><a href="#">B! Tips</a></li>
-		<li><a href="#">B!EM FEITO</a></li>
-		<li><a href="#">Closet Blast!</a></li>
-		<li><a href="#">Estação Blast!</a></li>
-		<li><a href="#">J-Info</a></li>
-	</ul>
-	<ul class="bottomnavMenu submenu">
-		<li><a href="#">J-Metal Is the Law</a></li>
-		<li><a href="#">J-Neration</a></li>
-		<li><a href="#">Knockdown!</a></li>
-		<li><a href="#">Plug In Baby</a></li>
-		<li><a href="#">Pop Drops</a></li>
-		<li><a href="#">Ready2Rock</a></li>
-		<li><a href="#">Questão B!</a></li>
-		<li><a href="#">Super Supimpa</a></li>
-		<li><a href="#">T!</a></li>
-		<li><a href="#">Ambivalent Ideal</a></li>
-		<li><a href="#">Candy Magic</a></li>
-		<li><a href="#">Dorama Queen</a></li>
-	</ul>
-	<ul class="bottomnavMenu submenu">
-		<li><a href="#">Fikdik</a></li>
-		<li><a href="#">J-Rock no Naka</a></li>
-		<li><a href="#">J-Station</a></li>
-		<li><a href="#">J-Wave</a></li>
-		<li><a href="#">LaPotit</a></li>
-		<li><a href="#">Música pelo Mundo</a></li>
-		<li><a href="#">Risk en Eve</a></li>
-		<li><a href="#">Rock Shock by iori</a></li>
-		<li><a href="#">SushiRocks!</a></li>
-		<li><a href="#">Top Top</a></li>
-		<li><a href="#">Zero-G</a></li>
-		<li><a href="#">ero:de</a></li>
-	</ul>
-</div>
-<p id="sitecopyright">
-© Copyroght 2010 Rádio Blast! Networks.
-<a href="https://twitter.com/radioblast" class="twitter-follow-button follow-blast"
-data-show-count="true"
-data-lang="pt">Seguir @radioblast</a>
-<img src="layout/images/footer-logo.png" class="footer-logo" alt="Radio Blast" />
-</p>
-</footer>
-</div>
+	</div>
 
-<script type="text/javascript">
-// atualizar browser
-var $buoop = {vs:{i:8,f:3.6,o:11,s:5,n:9}}
-$buoop.ol = window.onload;
-window.onload=function(){
- try {if ($buoop.ol) $buoop.ol();}catch (e) {}
- var e = document.createElement("script");
- e.setAttribute("type", "text/javascript");
- e.setAttribute("src", "http://browser-update.org/update.js");
- document.body.appendChild(e);
-}
+	<footer id="sitefooter" class="contraste">
+	<div id="bottomnav" class="contraste">
 
-// coisas do twitter
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</body>
+		<ul class="bottomnavMenu">
+			<h2><img class="rotate" src="layout/images/plus.png" /><strong>Sobre</strong></h2>
+			<li><a href="#">Equipe</a></li>
+			<li><a href="#">Contato</a></li>
+			<li><a href="#">Programação</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Ajude-nos!</a></li>
+			<h2>Na Web</h2>
+			<li><a href="#">BlasTV!</a></li>
+			<li><a href="#">IRC</a></li>
+			<li><a href="#">Last.fm</a></li>
+			<li><a href="#">Twitter</a></li>
+		</ul>
+
+		<ul class="bottomnavMenu">
+			<h2>Divulgue</h2>
+			<li><a href="#">Aliar-se</a></li>
+			<li><a href="#">No seu site</a></li>
+			<h2><img class="rotate" src="layout/images/plus.png" /><strong>Noticias</strong></h2>
+			<li><a href="#">Música</a></li>
+			<li><a href="#">Games</a></li>
+			<li><a href="#">Cinema</a></li>
+			<li><a href="#">Anime & Mangá</a></li>
+			<li><a href="#">Japão</a></li>
+			<li><a href="#">Tecnologia</a></li>
+		</ul>
+		<ul class="bottomnavMenu">
+			<h2><img class="rotate" src="layout/images/plus.png" /><strong>Blogs</strong></h2>
+			<li><a href="#">Arquivo B!</a></li>
+			<li><a href="#">Blast! Blog</a></li>
+			<li><a href="#">Chega de NHENHENHÉ!</a></li>
+			<li><a href="#">Fã-clube</a></li>
+			<li><a href="#">7ªrte</a></li>
+			<li><a href="#">A Regra É Kalkha</a></li>
+			<li><a href="#">Aquecimento</a></li>
+			<li><a href="#">B! Tips</a></li>
+			<li><a href="#">B!EM FEITO</a></li>
+			<li><a href="#">Closet Blast!</a></li>
+			<li><a href="#">Estação Blast!</a></li>
+			<li><a href="#">J-Info</a></li>
+		</ul>
+		<ul class="bottomnavMenu submenu">
+			<li><a href="#">J-Metal Is the Law</a></li>
+			<li><a href="#">J-Neration</a></li>
+			<li><a href="#">Knockdown!</a></li>
+			<li><a href="#">Plug In Baby</a></li>
+			<li><a href="#">Pop Drops</a></li>
+			<li><a href="#">Ready2Rock</a></li>
+			<li><a href="#">Questão B!</a></li>
+			<li><a href="#">Super Supimpa</a></li>
+			<li><a href="#">T!</a></li>
+			<li><a href="#">Ambivalent Ideal</a></li>
+			<li><a href="#">Candy Magic</a></li>
+			<li><a href="#">Dorama Queen</a></li>
+		</ul>
+		<ul class="bottomnavMenu submenu">
+			<li><a href="#">Fikdik</a></li>
+			<li><a href="#">J-Rock no Naka</a></li>
+			<li><a href="#">J-Station</a></li>
+			<li><a href="#">J-Wave</a></li>
+			<li><a href="#">LaPotit</a></li>
+			<li><a href="#">Música pelo Mundo</a></li>
+			<li><a href="#">Risk en Eve</a></li>
+			<li><a href="#">Rock Shock by iori</a></li>
+			<li><a href="#">SushiRocks!</a></li>
+			<li><a href="#">Top Top</a></li>
+			<li><a href="#">Zero-G</a></li>
+			<li><a href="#">ero:de</a></li>
+		</ul>
+	</div>
+	<p id="sitecopyright">
+	© Copyroght 2010 Rádio Blast! Networks.
+	<a href="https://twitter.com/radioblast" class="twitter-follow-button follow-blast"
+	data-show-count="true"
+	data-lang="pt">Seguir @radioblast</a>
+	<img src="layout/images/footer-logo.png" class="footer-logo" alt="Radio Blast" />
+	</p>
+	</footer>
+	</div>
+
+	<script type="text/javascript">
+	// atualizar browser
+	var $buoop = {vs:{i:8,f:3.6,o:11,s:5,n:9}}
+	$buoop.ol = window.onload;
+	window.onload=function(){
+	 try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+	 var e = document.createElement("script");
+	 e.setAttribute("type", "text/javascript");
+	 e.setAttribute("src", "http://browser-update.org/update.js");
+	 document.body.appendChild(e);
+	}
+
+	// coisas do twitter
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</body>
 </html>

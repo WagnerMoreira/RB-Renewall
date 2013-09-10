@@ -93,8 +93,101 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 </div>
 </section>
+<script language="javascript" type="text/javascript" src="layout/mootools-1.2-core.js"></script>
+<script language="javascript" type="text/javascript" src="layout/mootools-1.2-more.js"></script>
+<script language="javascript" type="text/javascript" src="layout/SlideItMoo.js"></script>
+<script language="javascript" type="text/javascript">
+window.addEvent('domready', function(){
+	/* thumbnails example , div containers */
+	new SlideItMoo({itemsVisible:5, // the number of thumbnails that are visible
+		currentElement: 0, // the current element. starts from 0. If you want to start the display with a specific thumbnail, change this
+		thumbsContainer: 'thumbs2',
+		elementScrolled: 'thumb_container2',
+		overallContainer: 'gallery_container2'});				
+});
+</script>
 <section id="slider">
-<img src="layout/images/slider.png" alt="Slider que ainda não esta pronto =D">
+	<div id="gallery_container2">	
+		<div id="thumb_container2">			
+			<div id="thumbs2">
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DC080302018.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Nam porta tellus ac urna    
+                </div>	
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DC080302028.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Praesent pellentesque eros nec nisl    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DC080302030.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Vestibulum eleifend scelerisque purus    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DC080302040.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Felis nulla iaculis lacus    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02825.jpg" rel="lightbox[galerie]" target="_blank">
+              		<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Quisque neque. Donec quam ante, pulvinar vitae    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02841.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Suspendisse sodales turpis. Aliquam lectus    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02865.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Praesent pellentesque eros nec nisl    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02891.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                     Nam porta tellus ac urna    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02916.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Praesent pellentesque eros nec nisl    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02959.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Vestibulum eleifend scelerisque purus    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC03032.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Suspendisse sodales turpis. Aliquam lectus    
+                </div>	
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC03032.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Suspendisse sodales turpis. Aliquam lectus    
+                </div>	
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC02959.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Vestibulum eleifend scelerisque purus    
+                </div>
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC03032.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Suspendisse sodales turpis. Aliquam lectus    
+                </div>	
+				<div class="thumbnail">
+                	<a href="layout/gallery/full/DSC03032.jpg" rel="lightbox[galerie]" target="_blank">
+                    	<img src="layout/gallery/thumb/thumb.png" width="100" height="65" /></a>
+                    Suspendisse sodales turpis. Aliquam lectus    
+                </div>	
+			</div>			
+		</div>
+	</div>	
 </section>
 
 <div class="menu-arquivob">

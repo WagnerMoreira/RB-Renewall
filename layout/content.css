@@ -207,7 +207,7 @@ html:not(.home) #miolo :not(article) aside > h1 {
 
 #miolo .grid-membros {
   float: left;
-  width: 31rem;
+  width: 26rem;
 }
 
 #miolo .grid-membros h2 {
@@ -222,6 +222,10 @@ html:not(.home) #miolo :not(article) aside > h1 {
 
 .blog-text {
   width: 22rem;
+}
+
+.member-text {
+  width: 33rem;
 }
 
 .blog-img {
@@ -294,8 +298,7 @@ ul.social-bar li {
 
     .meio-holder-membro {
         float: left;
-        width: 29rem;
-        margin-left: 15px;
+        width: 36rem;
     }
     .meio-holder2 {
         float: right;
