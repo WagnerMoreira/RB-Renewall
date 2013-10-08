@@ -1,0 +1,33 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title></title>
+</head>
+  <body>
+    <audio controls="controls">
+      <source src="http://67.205.74.73:9364/;" />
+    </audio>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+     if('webkitAudioContext' in window) {
+    var myAudioContext = new webkitAudioContext();
+    }
+
+    request = new XMLHttpRequest();
+    request.open('GET', 'http://67.205.74.73:9364/;', true);
+    request.responseType = 'arraybuffer';
+    request.addEventListener('load', bufferSound, false);
+    request.send();
+
+
+    function bufferSound(event) {
+      var request = event.target;
+      var source = myAudioContext.createBufferSource();
+      source.buffer = myAudioContext.createBuffer(request.response, false);
+      source.connect(myAudioContext.destination);
+      source.noteOn(0);
+    }
+    </script>
+  </body>
+</html>
