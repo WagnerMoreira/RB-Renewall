@@ -88,3 +88,18 @@ html.night #bottomnav {
   -o-transform: scale(1.2) rotate(90deg) translate(0px);
   transform: scale(1.2) rotate(90deg) translate(0px);
 }
+
+@media (max-width: 960px) {
+
+  #bottomnav {
+    display: none;
+  }
+  #sitecopyright {
+    padding: 15px 0;
+  }
+  .copy-text{
+    position: relative;
+    top: 21px;
+    display: block;
+  }
+}

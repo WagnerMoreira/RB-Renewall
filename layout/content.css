@@ -300,6 +300,7 @@ ul.social-bar li {
         float: left;
         width: 36rem;
     }
+
     .meio-holder2 {
         float: right;
         width: 30rem;
@@ -358,7 +359,66 @@ ul.social-bar li {
       font-weight: 700;
       -webkit-transition: color .2s;
       transition: color .2s;
-    } 
+    }
+}
+
+@media (max-width: 960px) {
+
+    .menu-blog {
+      float: none;
+      width: 100%;
+    }
+    .menu-blog h2 {
+      width: 100%;
+      text-align: center;
+    }
+    .menu-blog ul li {
+      background: #ccc;
+      text-align: center;
+      font-size: 16px;
+      margin: 3px 0 3px 0;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+    .menu-blog ul li:hover {
+      background: #f90;
+      -moz-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .menu-blog ul li a{
+      color: #666;
+      font-weight: bold;
+      text-shadow: 0 1px rgba(255, 255, 255, 0);
+      margin: .5rem .4rem;
+      padding: 0 .9rem;
+      -webkit-transition-property: -webkit-transform, color, background, text-shadow;
+      -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease, ease;
+      transition-property: transform, color, background, text-shadow;
+      transition-timing-function: cubic-bezier(0, 0, 0, 1), ease, ease, ease;
+      line-height: 2rem;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0);
+    }
+    .menu-blog ul li a:hover {
+      color: #333;
+      text-shadow: 0 1px rgba(255, 255, 255, .6);
+    }
+    #slider{
+      display: none;
+    }
+    .meio-holder-blog {
+      padding: 30px 0 0 0;
+    }
+    .meio-holder2 {
+      width: 46rem;
+      margin: 0 auto;
+    }
+    .member-text {
+      width: 75rem;
+    }
 }
 
 .blog-ultimas h2.titulo {
@@ -432,6 +492,24 @@ html.night .contraste {
     margin-right: auto;
     width: 468px;
     height: 60px;
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+
+    #ad4 {
+      display: none;
+    }
+    .blog-ultimas {
+      float: left;
+      width: 46rem;
+      padding: 20px 0 0 0;
+      position: relative;
+      left: 0;
+    }
+    .blog-ultimas li {
+      font-size: 14px;
+      padding: 5px 0;
+    }
 }
 
 #ad4 {
